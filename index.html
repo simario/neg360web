@@ -1,0 +1,1608 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	
+    <!-- favicons -->
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="ico/apple-touch-icon-57x57.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114x114.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="60x60" href="ico/apple-touch-icon-60x60.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="ico/apple-touch-icon-120x120.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="ico/apple-touch-icon-76x76.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="ico/apple-touch-icon-152x152.png" />
+	<link rel="icon" type="image/png" href="ico/favicon-196x196.png" sizes="196x196" />
+	<link rel="icon" type="image/png" href="ico/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/png" href="ico/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="ico/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="ico/favicon-128.png" sizes="128x128" />
+	<meta name="application-name" content="&nbsp;"/>
+	<meta name="msapplication-TileColor" content="#FFFFFF" />
+	<meta name="msapplication-TileImage" content="ico/mstile-144x144.png" />
+	<meta name="msapplication-square70x70logo" content="ico/mstile-70x70.png" />
+	<meta name="msapplication-square150x150logo" content="ico/mstile-150x150.png" />
+	<meta name="msapplication-wide310x150logo" content="ico/mstile-310x150.png" />
+	<meta name="msapplication-square310x310logo" content="ico/mstile-310x310.png" />
+
+    <title>Negotiation 360&deg; Mobile App</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom styles for bootstrap -->
+    <link href="css/overwrite.css" rel="stylesheet">
+
+	<!-- Custom styles for fontawesome icon -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+
+    <!-- Flexslider -->
+    <link href="css/flexslider.css" rel="stylesheet">
+
+    <!-- prettyPhoto -->	
+	<link href="css/prettyPhoto.css" rel="stylesheet">	
+
+    <!-- animate -->
+    <link href="css/animate.css" rel="stylesheet">
+	
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+	
+	<!-- Font for this template -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+
+	<!-- Bootstrap slider style -->
+    <link href="css/bootstrap-slider.css" rel="stylesheet">
+    <style type="text/css">
+		#sliderImportant .slider-selection {
+			background: #BABABA;
+		}
+		#sliderSatisfied .slider-selection {
+			background: #BABABA;
+		}
+
+	</style>
+
+	<!-- Custom styles for template skin -->
+    <link href="skins/negskin/skin.css" rel="stylesheet">
+	
+	<!-- Custom styles for this template -->
+    <!-- <link href="css/style2.css" rel="stylesheet"> -->
+
+    <!-- bootstrap touchspin -->
+    <link href="css/jquery.bootstrap-touchspin.css" rel="stylesheet">
+
+    <!-- Circliful -->
+    <link href="css/jquery.circliful.css" rel="stylesheet">
+    <style type="text/css">
+		.center {
+		     float: none;
+		     margin-left: auto;
+		     margin-right: auto;
+		}
+    </style>
+
+    <!-- Chart canvas -->
+    <style type="text/css">
+	    canvas{
+	    	width: 100% !important;
+			max-width: 600px;
+			}
+	</style>
+
+	<!-- Chart legends -->
+	<style type="text/css">
+		.pie-legend li {
+			font-size: 11px;
+			color: gray;
+		}
+
+		.pie-legend li span {
+			width: 1em;
+			height: 1em;
+			display: inline-block;
+			margin-right: 5px;
+			font-size: 12px;
+			color: gray;
+		}
+
+		.pie-legend {
+			list-style: none;    
+		}
+
+		.bar-legend li {
+			font-size: 12px;
+			color: gray;
+			display: inline;
+			padding-left: 15px;
+		}
+
+		.bar-legend li span {
+			width: 1em;
+			height: 1em;
+			margin-right: 5px;
+			display: inline-block;
+			font-size: 12px;
+			color: gray;
+		}
+
+		.bar-legend {
+			list-style: none;    
+		}
+
+	</style>
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+	<!-- Start home -->
+	<section id="home" class="bgslider-wrapper">
+		<div id="animated-bg">
+			<div id="animated-bg1" class="bg-slider"></div>
+			<div id="animated-bg2" class="bg-slider"></div>
+			<div id="animated-bg3" class="bg-slider"></div>
+		</div>
+		<div class="home-contain">
+			<div class="container">
+				<div class="row wow fadeInDown" data-wow-delay="0.2s">
+					<div class="col-md-12">
+						<a href="#home" class="logo"></a>
+					</div>
+					<div class="col-md-8 col-md-offset-2 home-headline">
+						<h4>Negotiation 360&deg;</h4>
+						<p>Mobile app for negotiation success</p>
+						<a href="#" class="btn btn-default"><i class="fa fa-mobile fa-lg"></i> App store</a>
+						<!-- <a href="#" class="btn btn-default"><i class="fa fa-play"></i> Google play</a> -->
+					</div>
+				</div>
+
+				<div class="row wow fadeInUp" data-wow-delay="0.2s">
+					<div class="col-md-8 col-md-offset-2 margintop60">
+						<img src="img/iphone3.png" class="img-responsive" alt="" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End home -->
+
+	<!-- Start navigation -->
+	<header>
+		<div class="navbar navbar-default" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#home">Negotiation 360&deg;</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="#intro">Intro</a></li>
+						<li><a href="#features">Features</a></li>
+						<li><a href="#profile">Profile</a></li>
+						<li><a href="#scorecard">Scorecard</a></li>
+						<li><a href="#practices">Best Practices</a></li>
+						<li><a href="#resources">Resources &amp; More</a></li>
+						<li><a href="#gallery">Gallery</a></li>			
+						<!-- <li><a href="#contact">Contact</a></li> -->				
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</div>
+	</header>
+	<!-- End navigation -->
+	
+	<!-- Start introduce -->
+	<section id="intro" class="contain colorbg">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 wow bounceInDown" data-wow-delay="0.2s">
+					<h3 class="headline"><span>negotiation</span> 360&deg;</h3>
+					<p>
+						Harvard Business School Professor and award-winning author Michael Wheeler created Negotiation 360&deg; to enhance your ability to reach agreement and resolve disputes. Its interactive features are based on cutting edge theory and proven best practices.
+					</p>
+					<p>
+						If there’s one person at the bargaining table with Negotiation 360&deg;, that person should be you.
+					</p>
+					<p>
+						Find out about each feature of the app below and take a moment to try each for yourself.
+					</p>
+					<a href="#features" class="btn btn-default btn-lg btn-scroll">View our features</a>					
+				</div>
+				<div class="col-md-6 wow fadeInRightBig" data-wow-delay="0.6s">
+					<img src="img/iphone4.png" class="img-responsive pull-right" alt="" />
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End introduce -->
+	
+	<!-- Start features -->
+	<section id="features" class="contain darkbg">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="divider clearfix"></div>
+					<h4 class="heading wow flipInX" data-wow-delay="0.2s"><span>Features</span></h4>
+					<div class="features-body">
+						<i class="fa fa-mobile icon-title wow rotateIn" data-wow-delay="0.4s"></i>
+						<div class="row contain-body">
+							<div class="col-md-3 features-box wow bounceInDown" data-wow-delay="0.4s">
+								<i class="fa fa-user icon-feature"></i>
+								<h5>Profile</h5>
+								<p>
+								Discover strengths you can build on and other areas where you can improve with your self-profile.
+								</p>
+								<a href="#profile" class="btn btn-info btn-scroll"><i class="fa fa-angle-double-down"></i> Learn more</a>
+							</div>
+							<div class="col-md-3 features-box wow bounceInDown" data-wow-delay="0.6s">
+								<i class="fa fa-compass icon-feature"></i>
+								<h5>Scorecard</h5>
+								<p>
+								Rate your performance in your negotiations enabling you to learn the right lessons from your experience.
+								</p>
+								<a href="#scorecard" class="btn btn-info btn-scroll"><i class="fa fa-angle-double-down"></i> Learn more</a>
+							</div>
+							<div class="col-md-3 features-box wow bounceInDown" data-wow-delay="0.8s">
+								<i class="fa fa-star icon-feature"></i>
+								<h5>Best Practices</h5>
+								<p>
+								Prepare for upcoming negotiations with your Best Practices. The more you use it, the more powerful it becomes.
+								</p>
+								<a href="#practices" class="btn btn-info btn-scroll"><i class="fa fa-angle-double-down"></i> Learn more</a>
+							</div>
+							<div class="col-md-3 features-box wow bounceInDown" data-wow-delay="1s">
+								<i class="fa fa-lightbulb-o icon-feature"></i>
+								<h5>Resources &amp; More</h5>
+								<p>
+								Keep track of your lessons learned &amp; review other negotiation resources and prepare to win!
+								</p>
+								<a href="#resources" class="btn btn-info btn-scroll"><i class="fa fa-angle-double-down"></i> Learn more</a>
+							</div>						
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End features -->
+
+	<!-- Start profile -->
+	<section id="profile" class="contain darkbg">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="divider clearfix"></div>
+					<h4 class="heading wow flipInX" data-wow-delay="0.2s"><span>Profile</span></h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="profile-wrapper">
+						<i class="fa fa-user icon-title wow rotateIn" data-wow-delay="0.4s"></i>
+						<div class="flexslider wow rotateInDownLeft" data-wow-delay="0.4s">
+							<!-- <ul class="slides"> -->
+								<!-- <li> -->
+									<div class="profile-box">
+										<div class="profile-text" style="background-color: #3399cc">
+											<div>
+												<h3 style="color:#ffffff"><span>Your</span> Profile Here</h3>
+											</div>
+											<div>
+												<canvas id="canvas" width="300" height="250"></canvas>
+											</div>
+											<div>
+												<p style="color:#ffffff">The ratings you entered most closely match those of Assertive Value-Claimer. You have an above average confidence in asserting your interests and maximizing your slice of the pie.</p>
+											</div>
+										</div>
+										<div class="profile-text">										
+											<br><br><br>
+											<p>
+												The Self-assessment feature prompts you to create a personalized profile reflecting your basic negotiation style. It also explains fundamental tensions in negotiation that you must address in formulating strategy.
+											</p>
+											<p>
+												Click try it now below to discover your negotiaiton profile then dowload the app to learn more about your personal strengths and weaknesses.
+											</p>
+											<!-- <span class="company-name">Client company</span> -->
+											<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#profileModal">Try it now</button>
+										</div>	
+									</div>
+								<!-- </li> -->
+								<!-- <li> -->
+									<!-- <div class="profile-box">
+										<div class="profile-avatar">
+											<img src="img/avatar/avatar2.jpg" class="img-responsive" alt="" />
+										</div>
+										<div class="profile-text">
+											<h3><span>Anne</span> block</h3>
+											<blockquote>
+												<p>
+												Eam facer elaboraret ea, ad eos nullam consulatu maiestatis. Eum mazim simul ne, dicta mnesarchum duo no, ex nec graece verear quodsi mentitum iudicabit.
+												</p>
+											</blockquote>
+											<span class="company-name">Client company</span>
+										</div>	
+									</div>
+								</li>
+								<li>
+									<div class="profile-box">
+										<div class="profile-avatar">
+											<img src="img/avatar/avatar3.jpg" class="img-responsive" alt="" />
+										</div>
+										<div class="profile-text">
+											<h3><span>Alex</span> noah</h3>
+											<blockquote>
+												<p>
+												Disputando dissentiunt ei pro, equidem tibique maluisset et his. Graeci habemus pro in, ei eam quas vivendum comprehensam. 
+												</p>
+											</blockquote>
+											<span class="company-name">Client company</span>
+										</div>	
+									</div>
+								</li>
+								<li>
+									<div class="profile-box">
+										<div class="profile-avatar">
+											<img src="img/avatar/avatar4.jpg" class="img-responsive" alt="" />
+										</div>
+										<div class="profile-text">
+											<h3><span>Jean</span> roll</h3>
+											<blockquote>
+												<p>
+												No erat dicat vis. Sea an apeirian inciderint, quo id dico agam cotidieque, pro exerci latine eu. Sea cibo alterum antiopam ei. 
+												</p>
+											</blockquote>
+											<span class="company-name">Client company</span>
+										</div>	
+									</div>
+								</li>									
+							</ul> -->
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+	</section>
+	<!-- End profile -->
+	
+	<!-- Profile Modal -->
+	<div class="modal fade" id="profileModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Self-Assessment: Try It!</h4>
+	      </div>
+	      <div class="modal-body">
+	        		<div>
+	        			<p>Rate your relative strength in respect to four essential negotiation skills. You have a total of <strong>16 points</strong> to allocate overall.
+	        			</p>
+	        			<p>Remember, you're not judging how good you are at a particular skill. Instead, you're identifying what you are better at - and where else you're not as strong.
+	        			</p>
+						<p>Think about your skills in the kind of negotiations that you often do, or that are most important to you. Be sure you use all 16 points - no more; no less, then tap <strong>Save changes</strong> below.
+	        			</p>
+	        		</div>
+	        		<div>
+		        		<form class="form-horizontal" role="form">
+				            <div class="form-group">
+				                <label for="create" class="col-md-10 control-label">Recognizing and capitalizing on opportunities to create value.</label> 
+				                <input id="create" type="text" value="" name="create" class="col-md-2 form-control">
+				            </div>
+				            <div class="form-group">
+				                <label for="assert" class="col-md-10 control-label">Asserting your interests and point of view.</label> 
+				                <input id="assert" type="text" value="" name="assert" class="col-md-2 form-control">
+			               	</div>
+				            <div class="form-group">
+				                <label for="empathy" class="col-md-10 control-label">Understanding the motivations and feelings of other parties.</label> 
+				                <input id="empathy" type="text" value="" name="empathy" class="col-md-2 form-control">
+				            </div>
+				            <div class="form-group">
+				                <label for="claim" class="col-md-10 control-label">Getting the maximum possible in the agreement.</label> 
+				                <input id="claim" type="text" value="" name="claim" class="col-md-2 form-control">
+				            </div>
+				            <div class="row">
+				            	<div class="col-md-10"></div>
+				            	<div class="col-md-2" style="text-align:center"><h4>16</h4></div>
+				            </div>
+				        </form>
+			        </div>
+	      </div>
+	      <div class="modal-footer">
+	      	<div class="alert alert-danger" role="alert">Remember, numbers must sum to 16. Please try again.</div>
+	        <button type="button" class="btn btn-primary">Save changes</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+	<!-- Start scorecard -->
+	<section id="scorecard" class="contain darkbg">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="divider clearfix"></div>
+					<h4 class="heading wow flipInX" data-wow-delay="0.2s"><span>Scorecard</span></h4>
+					<div class="pricing-wrapper">
+						<i class="fa fa-compass icon-title wow rotateIn" data-wow-delay="0.4s"></i>
+						<div class="row">
+							<div class="col-md-4">
+								<div class="pricing-box wow bounceInDown" data-wow-delay="0.4s">
+									<div class="pricing-head">
+										<h4>IT Purchase</h4>
+										<div class="pricing-price" style="background-color:green">
+											<span class="price">Yes</span>
+											<span class="time">agreement reached</span>
+										</div>
+									</div>
+									<div class="pricing-body">
+										<ul>
+											<li><strong>Professional</strong>: Outside parties</li>
+											<li>
+												<div class="row">
+													<div class="col-xs-6">
+														<div class="center" style="font-weight: 700" id="importance" data-dimension="140" data-text="40" data-width="15" data-fontsize="24" data-percent="40" data-fgcolor="#3399cc" data-bgcolor="#eee" data-type="half" data-fill="#ddd"></div>
+														<p>Importance<p>
+													</div>
+													<div class="col-xs-6">
+														<div class="center" style="font-weight: 700" id="satisfaction" data-dimension="140" data-text="50" data-width="15" data-fontsize="24" data-percent="50" data-fgcolor="#3399cc" data-bgcolor="#eee" data-type="half" data-fill="#ddd"></div>
+														<p>Satisfaction<p>
+													</div>
+												</div>
+											</li>
+											<!-- <li>No business aplication</li>
+											<li>Support android only</li>
+											<li class="bottom"><a href="#" class="btn btn-default btn-lg">Get it now</a></li> -->
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="pricing-box centered wow bounceInDown" data-wow-delay="0.6s">
+									<div class="pricing-head">
+										<h4>Your Scorecard</h4>
+										<div class="pricing-price">
+											<span class="price">?</span>
+											<span class="time">agreement reached</span>
+										</div>
+									</div>
+									<div class="pricing-body">
+										<ul>
+											<li>Type <strong>?</strong></li>
+											<li>
+												<div class="row">
+													<div class="col-xs-6">
+														<div class="center" style="font-weight: 700" id="importance2" data-dimension="140" data-text="90" data-width="15" data-fontsize="24" data-percent="90" data-fgcolor="#3399cc" data-bgcolor="#eee" data-type="half" data-fill="#ddd"></div>
+														<p>Importance<p>
+													</div>
+													<div class="col-xs-6">
+														<div class="center" style="font-weight: 700" id="satisfaction2" data-dimension="140" data-text="0" data-width="15" data-fontsize="24" data-percent="0" data-fgcolor="#3399cc" data-bgcolor="#eee" data-type="half" data-fill="#ddd"></div>
+														<p>Satisfaction<p>
+													</div>
+												</div>
+											</li>
+											<!-- <li>No business aplication</li>-->
+											<p style="margin:20px 20px 10px 20px">The Scorecard feature enables you to do an after-action-review of every negotiation you undertake, large or small. It enables you to draw the right lessons from your own on-going experience.</p>
+											<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#scorecardModal">Try it now</button>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="pricing-box wow bounceInDown" data-wow-delay="0.8s">
+									<div class="pricing-head">
+										<h4>Strategic Plan</h4>
+										<div class="pricing-price" style="background-color:red">
+											<span class="price">NO</span>
+											<span class="time">agreement reached</span>
+										</div>
+									</div>
+									<div class="pricing-body">
+										<ul>
+											<li><strong>Professional</strong>: Colleagues in organization</li>
+											<li>
+												<div class="row">
+													<div class="col-xs-6">
+														<div class="center" style="font-weight: 700" id="importance3" data-dimension="140" data-text="70" data-width="15" data-fontsize="24" data-percent="70" data-fgcolor="#3399cc" data-bgcolor="#eee" data-type="half" data-fill="#ddd"></div>
+														<p>Importance<p>
+													</div>
+													<div class="col-xs-6">
+														<div class="center" style="font-weight: 700" id="satisfaction3" data-dimension="140" data-text="40" data-width="15" data-fontsize="24" data-percent="40" data-fgcolor="#3399cc" data-bgcolor="#eee" data-type="half" data-fill="#ddd"></div>
+														<p>Satisfaction<p>
+													</div>
+												</div>
+											</li>											
+											<!-- <li>Business aplication included</li>
+											<li>Support on IOS</li>
+											<li class="bottom"><a href="#" class="btn btn-default btn-lg">Get it now</a></li> -->
+										</ul>
+									</div>
+								</div>
+							</div>						
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</section>
+	<!-- End scorecard -->
+
+	<!-- Scorecard Modal -->
+	<div class="modal fade" id="scorecardModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Scorecard: Try It!</h4>
+	      </div>
+	      <div class="modal-body">
+	        <form class="form-horizontal">
+        	  	<div class="form-group">
+			    	<label for="negotiationName" class="col-sm-4 control-label">Negotiation Name</label>
+			    		<div class="col-sm-8">
+			    			<input type="name" class="form-control" id="negotiationName" placeholder="Enter a name for the negotiation..">
+			    		</div>
+			  	</div>
+			  	<div class="form-group">
+  					<label for="sel1" class="col-sm-4 control-label">Negotiation Type</label>
+		    		<div class="col-sm-8">
+						<select class="form-control">
+					  		<option>Select a negotiation type below..</option>
+					  		<option>Professional, with outside parties (vendors, customers, stakeholders, etc.)</option>
+					  		<option>Professional, with colleagues within your organization</option>
+					  		<option>Personal (such as buying a car or renting an apartment)</option>
+					  		<option>Community (with neighborhood groups, not-for-profits, etc.)</option>
+					  		<option>Family (with children parents, partners, spouses, etc.)</option>
+						</select>
+					</div>
+				</div>
+        	  	<div class="form-group">
+			    	<label for="formImportant" class="col-sm-7 control-label">How important was this negotiation?</label>
+					<input id="sliderImportant" data-slider-id='sliderImportant' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="10" data-slider-value="50"/>
+			  	</div>
+        	  	<div class="form-group">
+			    	<label for="negotiationName" class="col-sm-5 control-label">Did you reach an agreement?</label>
+			    		<div class="col-sm-7">
+			    			<label class="radio-inline">
+							  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Yes
+							</label>
+							<label class="radio-inline">
+							  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> No
+							</label>
+							<label class="radio-inline">
+							  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Not Yet
+							</label>
+			    		</div>
+			  	</div>
+        	  	<div class="form-group">
+			    	<label for="formSatisfied" class="col-sm-7 control-label">How satisfied are you with the result?</label>
+					<input id="sliderSatisfied" data-slider-id='sliderSatisfied' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="10" data-slider-value="50"/>
+			  	</div>
+			</form>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-primary">Save changes</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+	<!-- Start best practices -->
+	<section id="practices" class="contain darkbg">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="divider clearfix"></div>
+					<h4 class="heading wow flipInX" data-wow-delay="0.2s"><span>Best Practices</span></h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="contact-wrapper">
+						<i class="fa fa-star icon-title wow rotateIn" data-wow-delay="0.4s"></i>
+						<div class="contact-body wow rotateInDownLeft" data-wow-delay="0.4s">
+							<div>
+								<p>Your Best Practices allows you to take full advantage of the app: periodically review the kinds of negotiations you engage in, how important they are, and how you feel you've performed. Identify your own general patterns and trends pinpointing room to improve.</p><br>
+							</div>
+							<div class="row">
+								<div class="col-md-4" style="text-align:center">
+									<h4>Agreement Rate <a href="javascript://" data-toggle="modal" data-target="#myAgreeModal" style="color:#ff9f33"><i class="fa fa-info-circle" style="font-size: 20px;float:right; margin: 10px 0px"></i></a></h4> 
+									<div>
+										<canvas id="agree-canvas" width="150" height="150" ></canvas>
+									</div>
+									<div id="agreelegend"></div>
+								</div>
+								<div class="col-md-4">
+									<h4>Importance &amp; Satisfaction <a href="javascript://" data-toggle="modal" data-target="#myImportanceModal" style="color:#ff9f33"><i class="fa fa-info-circle" style="font-size: 20px;float:right; margin: 10px 0px"></i></a></h4> 
+									<div>
+										<canvas id="importance-canvas" width="150" height="150"></canvas>
+									</div>
+									<div id="importancelegend"></div>
+								</div>
+								<div class="col-md-4">
+									<h4>Negotiation Type <a href="javascript://" data-toggle="modal" data-target="#myTypeModal" style="color:#ff9f33"><i class="fa fa-info-circle" style="font-size: 20px;float:right; margin: 10px 0px"></i></a></h4> 
+									<div>
+										<canvas id="type-canvas" width="150" height="150" style="text-align: left"></canvas>
+									</div>
+									<div id="typelegend">
+									</div>
+								</div>
+							</div>
+							<!-- <p>
+							<strong>Address :</strong> Jl.Kemacetan terus No.3 Block.R2 Jakarata - Indonesia<br />
+							<strong>Phone :</strong> +6221 999 999 22 - <strong>Email :</strong> info@yourdomain.com
+							</p> -->
+							<!-- <a href="#" class="btn btn-default btn-lg">Try it now</a> -->
+
+							<!-- <form id="contactform" action="contact/contact.php" method="post" class="validateform" name="leaveContact">
+								<div class="clearfix"></div>
+								<div id="sendmessage">
+									<div class="alert alert-info marginbot35">
+										<button type="button" class="close" data-dismiss="alert">&times;</button>
+										<strong>Your message has been sent. Thank you!</strong><br />
+									</div>							
+								</div>								
+								<ul class="listForm cbp-so-section">
+									<li class="first-list cbp-so-side cbp-so-side-left">
+										<input class="form-control input-name input-lg" type="text" name="name" data-rule="maxlen:4" data-msg="Required field" placeholder="Enter your full name . . ." />
+										<div class="validation"></div>
+									</li>
+									<li class="cbp-so-side cbp-so-side-right">
+										<input class="form-control input-email input-lg" type="text" name="email" data-rule="email" data-msg="Please enter a valid email" placeholder="Enter your email address . . ."/>	
+										<div class="validation"></div>
+									</li>
+									<li class="full-list cbp-so-side cbp-so-side-bottom">
+										<textarea class="form-control input-message input-lg" rows="9" name="message" data-rule="required" data-msg="Please write something for us" placeholder="Write something for us . . ."></textarea>												
+										<div class="validation"></div>
+									</li>
+									<li class="full-list text-center cbp-so-side cbp-so-side-bottom">
+										<input type="submit" value="Try it now" class="btn btn-default btn-lg" name="Submit" />
+									</li>
+								</ul>
+							</form> -->
+						</div>
+					</div>
+					<div class="divider pull-left"></div>
+				</div>
+			</div>
+		</div>	
+	</section>
+	<!-- End best practices -->
+
+	<div class="modal fade" id="myAgreeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Agreement Rate</h4>
+	      </div>
+	      <div class="modal-body" style="text-align: left; font-size:14px">
+	        Take a look at the pie chart that shows your rate of agreement. Closing deals is important; but if you agree 100&#37; of the time, maybe you sometimes say "yes," when you really should walk away. <strong>Don't agree just for the sake of agreeing.</strong> Maybe you should be bolder by seeking agreements that may not be easy to reach, but would pay off handsomely if you do succeed.
+	      </div>
+      	    <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	  	    </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="modal fade" id="myTypeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Negotiation Type</h4>
+	      </div>
+	      <div class="modal-body" style="text-align: left; font-size:14px">
+	        Review the different kinds of negotiations that you engage in. What lessons should you take from one context and apply to another? <strong>What works in one case might not be appropriate in another.</strong> Are there situations where you need to be more agile so that you can adapt your strategy to the circumstance? (For example, value creation may be more or less important in a given case.)
+	      </div>
+            <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	  	    </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="modal fade" id="myImportanceModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Importance &amp; Satisfaction</h4>
+	      </div>
+	      <div class="modal-body" style="text-align: left; font-size:14px">
+			Research shows that negotiators with higher aspirations tend to get better results. That advantage comes with a cost, however; two costs, in fact. People with high expectations can feel disappointed even when they get a good deal. They also have a higher rate of impasse, if their aspirations are unrealistic. <strong>The takeaway: be ambitious while you are negotiating; but don't brood about the outcome when you're finished.</strong>
+	      </div>
+      	    <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	  	    </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Start reources -->
+	<section id="resources" class="contain colorbg">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="divider clearfix"></div>
+					<h4 class="heading wow flipInX" data-wow-delay="0.2s"><span>Resources &amp; More</span></h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="blog-wrapper">
+						<i class="fa fa-lightbulb-o icon-title wow rotateIn" data-wow-delay="0.4s"></i>
+						<div class="flexslider wow rotateInDownLeft" data-wow-delay="0.4s">
+							<ul class="slides">
+								<li>
+									<div class="blog-box">
+										<div class="blog-thumbls">
+											<img src="img/big/worked.jpg" class="img-responsive" alt="" />
+										</div>
+										<div class="artcle">
+											<div class="article-head">
+												<!-- <div class="date-post">
+													<span class="date">12</span>
+													<span class="mo-year">06-2014</span>
+												</div> -->
+												<h5>Worked Well, Do Differently</h5>
+												<!-- <ul class="meta-post">
+													<li><i class="fa fa-user"></i> <a href="#">John doe</a></li>
+													<li><i class="fa fa-file"></i> <a href="#">App</a></li>
+													<li><i class="fa fa-comment"></i> <a href="#">3</a></li>
+												</ul> -->
+											</div>
+											<div class="article-post">
+												<p>
+												Track your lessons learned, what worked well and what you would do differently, in each negotiaition. Reference these quickly before your next negotiation.
+												</p>
+												<!-- <p>
+												Harum accusata at pro, mea ne enim probo mediocrem. Vel ei voluptua ponderum phaedrum, pro atqui intellegam id.
+												</p> -->
+												<!-- <a href="singlepost.html">Read more...</a> -->
+											</div>
+										</div>	
+									</div>
+								</li>
+								<li>
+									<div class="blog-box">
+										<div class="blog-thumbls">
+											<img src="img/big/compare.jpg" class="img-responsive" alt="" />
+										</div>
+										<div class="artcle">
+											<div class="article-head">
+												<!-- <div class="date-post">
+													<span class="date">10</span>
+													<span class="mo-year">06-2014</span>
+												</div> -->
+												<h5>Profile Comparison</h5>
+												<!-- <ul class="meta-post">
+													<li><i class="fa fa-user"></i> <a href="#">John doe</a></li>
+													<li><i class="fa fa-file"></i> <a href="#">App</a></li>
+													<li><i class="fa fa-comment"></i> <a href="#">3</a></li>
+												</ul> -->
+											</div>
+											<div class="article-post">
+												<p>
+												See how your negotiation results compare to your profile. Find ways to improve and win in your next negotiation.
+												</p>
+												<!-- <p>
+												Harum accusata at pro, mea ne enim probo mediocrem. Vel ei voluptua ponderum phaedrum, pro atqui intellegam id.
+												</p> -->
+												<!-- <a href="singlepost.html">Read more...</a> -->
+											</div>
+										</div>	
+									</div>
+								</li>
+								<li>
+									<div class="blog-box">
+										<div class="blog-thumbls">
+											<img src="img/big/tips.jpg" class="img-responsive" alt="" />
+										</div>
+										<div class="artcle">
+											<div class="article-head">
+												<!-- <div class="date-post">
+													<span class="date">08</span>
+													<span class="mo-year">06-2014</span>
+												</div> -->
+												<h5>Skill-Building Tips</h5>
+												<!-- <ul class="meta-post">
+													<li><i class="fa fa-user"></i> <a href="#">John doe</a></li>
+													<li><i class="fa fa-file"></i> <a href="#">App</a></li>
+													<li><i class="fa fa-comment"></i> <a href="#">3</a></li>
+												</ul> -->
+											</div>
+											<div class="article-post">
+												<p>
+												Receive tips on how to improve in each of the fundamental areas of negotiation. Gain critical insight into how these compare with your profile.
+												</p>
+												<!-- <p>
+												Harum accusata at pro, mea ne enim probo mediocrem. Vel ei voluptua ponderum phaedrum, pro atqui intellegam id.
+												</p> -->
+												<!-- <a href="singlepost.html">Read more...</a> -->
+											</div>
+										</div>	
+									</div>
+								</li>
+								<li>
+									<div class="blog-box">
+										<div class="blog-thumbls">
+											<img src="img/big/notes.jpg" class="img-responsive" alt="" />
+										</div>
+										<div class="artcle">
+											<div class="article-head">
+												<!-- <div class="date-post">
+													<span class="date">02</span>
+													<span class="mo-year">06-2014</span>
+												</div> -->
+												<h5>Negotiation Notes</h5>
+												<!-- <ul class="meta-post">
+													<li><i class="fa fa-user"></i> <a href="#">John doe</a></li>
+													<li><i class="fa fa-file"></i> <a href="#">App</a></li>
+													<li><i class="fa fa-comment"></i> <a href="#">3</a></li>
+												</ul> -->
+											</div>
+											<div class="article-post">
+												<p>
+												Quickly take notes, relating to a specific negotiation or an external source, and keep these at your fingertips for easy reference.
+												</p>
+												<!-- <p>
+												Harum accusata at pro, mea ne enim probo mediocrem. Vel ei voluptua ponderum phaedrum, pro atqui intellegam id.
+												</p> -->
+												<!-- <a href="singlepost.html">Read more...</a> -->
+											</div>
+										</div>	
+									</div>
+								</li>								
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+	</section>
+	<!-- End resources -->
+
+	<!-- Start app images -->
+	<section id="gallery" class="contain colorbg">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="divider clearfix"></div>
+					<h4 class="heading wow flipInX" data-wow-delay="0.2s"><span>App Gallery</span></h4>
+				</div>
+			</div>
+		</div>
+		<div class="Products-wrapper">
+			<i class="fa fa-photo icon-title wow rotateIn" data-wow-delay="0.4s"></i>
+			<ul class="wow fadeInUp" data-wow-delay="0.4s">
+				<li>
+					<div class="image-wrapper">
+						<div class="image-caption">
+							<a href="img/big/bg1.jpg" class="zoom" data-pretty="prettyPhoto"><i class="fa fa-search-plus"></i></a>
+							<div class="image-title"><a href="#practices">Best Practices</a></div>
+						</div>						
+						<img src="img/small/bg1.jpg" class="img-responsive" alt="" />
+					</div>
+				</li>
+				<li>
+					<div class="image-wrapper">
+						<div class="image-caption">
+							<a href="img/big/tips.jpg" class="zoom" data-pretty="prettyPhoto"><i class="fa fa-search-plus"></i></a>
+							<div class="image-title"><a href="#">Skill-Building Tips</a></div>
+						</div>					
+						<img src="img/small/tips.jpg" class="img-responsive" alt="" />
+					</div>
+				</li>
+				<li>
+					<div class="image-wrapper">
+						<div class="image-caption">
+							<a href="img/big/bg4.jpg" class="zoom" data-pretty="prettyPhoto"><i class="fa fa-search-plus"></i></a>
+							<div class="image-title"><a href="#scorecard">Scorecard</a></div>
+						</div>					
+						<img src="img/small/bg4.jpg" class="img-responsive" alt="" />
+					</div>
+				</li>
+				<li>
+					<div class="image-wrapper">
+						<div class="image-caption">
+							<a href="img/big/worked.jpg" class="zoom" data-pretty="prettyPhoto"><i class="fa fa-search-plus"></i></a>
+							<div class="image-title"><a href="#">What Worked Well</a></div>
+						</div>					
+						<img src="img/small/worked.jpg" class="img-responsive" alt="" />
+					</div>
+				</li>
+				<li>
+					<div class="image-wrapper">
+						<div class="image-caption">
+							<a href="img/big/bg3.jpg" class="zoom" data-pretty="prettyPhoto"><i class="fa fa-search-plus"></i></a>
+							<div class="image-title"><a href="#resources">Resources &amp; More</a></div>
+						</div>					
+						<img src="img/small/bg3.jpg" class="img-responsive" alt="" />
+					</div>
+				</li>
+				<li>
+					<div class="image-wrapper">
+						<div class="image-caption">
+							<a href="img/big.jpg" class="zoom" data-pretty="prettyPhoto"><i class="fa fa-search-plus"></i></a>
+							<div class="image-title"><a href="#">Profile Compare</a></div>
+						</div>					
+						<img src="img/small/compare.jpg" class="img-responsive" alt="" />
+					</div>
+				</li>
+				<li>
+					<div class="image-wrapper">
+						<div class="image-caption">
+							<a href="img/big/bg5.jpg" class="zoom" data-pretty="prettyPhoto"><i class="fa fa-search-plus"></i></a>
+							<div class="image-title"><a href="#intro">Launch</a></div>
+						</div>					
+						<img src="img/small/bg5.jpg" class="img-responsive" alt="" />
+					</div>
+				</li>
+				<li>
+					<div class="image-wrapper">
+						<div class="image-caption">
+							<a href="img/big/notes.jpg" class="zoom" data-pretty="prettyPhoto"><i class="fa fa-search-plus"></i></a>
+							<div class="image-title"><a href="#">Negotiation Notes</a></div>
+						</div>					
+						<img src="img/small/notes.jpg" class="img-responsive" alt="" />
+					</div>
+				</li>
+				<li>
+					<div class="image-wrapper">
+						<div class="image-caption">
+							<a href="img/big/bg2.jpg" class="zoom" data-pretty="prettyPhoto"><i class="fa fa-search-plus"></i></a>
+							<div class="image-title"><a href="#profile">Profile</a></div>
+						</div>					
+						<img src="img/small/bg2.jpg" class="img-responsive" alt="" />
+					</div>
+				</li>
+				<li>
+					<div class="image-wrapper">
+						<div class="image-caption">
+							<a href="img/big/profile.jpg" class="zoom" data-pretty="prettyPhoto"><i class="fa fa-search-plus"></i></a>
+							<div class="image-title"><a href="#">Profile</a></div>
+						</div>					
+						<img src="img/small/profile.jpg" class="img-responsive" alt="" />
+					</div>
+				</li>							
+			</ul>
+		</div>		
+	</section>
+	<!-- End app images -->
+
+	<!-- Start team
+	<section id="team" class="contain colorbg">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="divider clearfix"></div>
+					<h4 class="heading wow flipInX" data-wow-delay="0.2s"><span>Best Practices</span></h4>			
+					<div class="team-wrapper">
+						<div class="team">
+							<i class="fa fa-star icon-title centered wow rotateIn" data-wow-delay="0.4s"></i>
+							<div class="team-left">
+								<div class="team-box wow bounceInDown" data-wow-delay="0.4s">
+									<div class="team-profile">
+										<h6>John doe</h6>
+										<p>Web designer</p>
+										<a href="#"><i class="fa fa-facebook icon-social"></i></a>
+										<a href="#"><i class="fa fa-twitter icon-social"></i></a>
+										<a href="#"><i class="fa fa-linkedin icon-social"></i></a>						
+									</div>
+									<img src="img/team/team1.png" class="img-responsive" alt="" />
+								</div>
+								<div class="team-box  wow bounceInDown" data-wow-delay="0.6s">
+									<div class="team-profile">
+										<h6>John doe</h6>
+										<p>Web designer</p>
+										<a href="#"><i class="fa fa-facebook icon-social"></i></a>
+										<a href="#"><i class="fa fa-twitter icon-social"></i></a>
+										<a href="#"><i class="fa fa-linkedin icon-social"></i></a>						
+									</div>							
+									<img src="img/team/team2.png" class="img-responsive" alt="" />
+								</div>
+							</div>
+							<div class="team-right">
+								<div class="team-box wow bounceInDown" data-wow-delay="0.8s">
+									<div class="team-profile">
+										<h6>John doe</h6>
+										<p>Web designer</p>
+										<a href="#"><i class="fa fa-facebook icon-social"></i></a>
+										<a href="#"><i class="fa fa-twitter icon-social"></i></a>
+										<a href="#"><i class="fa fa-linkedin icon-social"></i></a>						
+									</div>						
+									<img src="img/team/team3.png" class="img-responsive" alt="" />
+								</div>
+								<div class="team-box wow bounceInDown" data-wow-delay="1s">
+									<div class="team-profile">
+										<h6>John doe</h6>
+										<p>Web designer</p>
+										<a href="#"><i class="fa fa-facebook icon-social"></i></a>
+										<a href="#"><i class="fa fa-twitter icon-social"></i></a>
+										<a href="#"><i class="fa fa-linkedin icon-social"></i></a>						
+									</div>							
+									<img src="img/team/team4.png" class="img-responsive" alt="" />
+								</div>
+							</div>
+						</div>
+					</div>				
+				</div>
+			</div>			
+		</div>
+	</section>
+	<!-- End team -->
+	
+	<!-- Start blog
+	<section id="blog" class="contain colorbg">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="divider clearfix"></div>
+					<h4 class="heading wow flipInX" data-wow-delay="0.2s"><span>Resources &amp; More</span></h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="blog-wrapper">
+						<i class="fa fa-lightbulb-o icon-title wow rotateIn" data-wow-delay="0.4s"></i>
+						<div class="flexslider wow rotateInDownLeft" data-wow-delay="0.4s">
+							<ul class="slides">
+								<li>
+									<div class="blog-box">
+										<div class="blog-thumbls">
+											<img src="img/blog/thumbs/1.jpg" class="img-responsive" alt="" />
+										</div>
+										<div class="artcle">
+											<div class="article-head">
+												<div class="date-post">
+													<span class="date">12</span>
+													<span class="mo-year">06-2014</span>
+												</div>
+												<h5>Quo autem complecit porro commodo</h5>
+												<ul class="meta-post">
+													<li><i class="fa fa-user"></i> <a href="#">John doe</a></li>
+													<li><i class="fa fa-file"></i> <a href="#">App</a></li>
+													<li><i class="fa fa-comment"></i> <a href="#">3</a></li>
+												</ul>
+											</div>
+											<div class="article-post">
+												<p>
+												Harum accusata at pro, mea ne enim probo mediocrem. Vel ei voluptua ponderum phaedrum, pro atqui intellegam id. Clita perpetua pri et, in vis suas invenire definitionem.
+												</p>
+												<a href="singlepost.html">Read more...</a>
+											</div>
+										</div>	
+									</div>
+								</li>
+								<li>
+									<div class="blog-box">
+										<div class="blog-thumbls">
+											<img src="img/blog/thumbs/2.jpg" class="img-responsive" alt="" />
+										</div>
+										<div class="artcle">
+											<div class="article-head">
+												<div class="date-post">
+													<span class="date">10</span>
+													<span class="mo-year">06-2014</span>
+												</div>
+												<h5>Quo autem complecit porro commodo</h5>
+												<ul class="meta-post">
+													<li><i class="fa fa-user"></i> <a href="#">John doe</a></li>
+													<li><i class="fa fa-file"></i> <a href="#">App</a></li>
+													<li><i class="fa fa-comment"></i> <a href="#">3</a></li>
+												</ul>
+											</div>
+											<div class="article-post">
+												<p>
+												Harum accusata at pro, mea ne enim probo mediocrem. Vel ei voluptua ponderum phaedrum, pro atqui intellegam id. Clita perpetua pri et, in vis suas invenire definitionem.
+												</p>
+												<a href="singlepost.html">Read more...</a>
+											</div>
+										</div>	
+									</div>
+								</li>
+								<li>
+									<div class="blog-box">
+										<div class="blog-thumbls">
+											<img src="img/blog/thumbs/3.jpg" class="img-responsive" alt="" />
+										</div>
+										<div class="artcle">
+											<div class="article-head">
+												<div class="date-post">
+													<span class="date">08</span>
+													<span class="mo-year">06-2014</span>
+												</div>
+												<h5>Quo autem complecit porro commodo</h5>
+												<ul class="meta-post">
+													<li><i class="fa fa-user"></i> <a href="#">John doe</a></li>
+													<li><i class="fa fa-file"></i> <a href="#">App</a></li>
+													<li><i class="fa fa-comment"></i> <a href="#">3</a></li>
+												</ul>
+											</div>
+											<div class="article-post">
+												<p>
+												Harum accusata at pro, mea ne enim probo mediocrem. Vel ei voluptua ponderum phaedrum, pro atqui intellegam id. Clita perpetua pri et, in vis suas invenire definitionem.
+												</p>
+												<a href="singlepost.html">Read more...</a>
+											</div>
+										</div>	
+									</div>
+								</li>
+								<li>
+									<div class="blog-box">
+										<div class="blog-thumbls">
+											<img src="img/blog/thumbs/4.jpg" class="img-responsive" alt="" />
+										</div>
+										<div class="artcle">
+											<div class="article-head">
+												<div class="date-post">
+													<span class="date">02</span>
+													<span class="mo-year">06-2014</span>
+												</div>
+												<h5>Quo autem complecit porro commodo</h5>
+												<ul class="meta-post">
+													<li><i class="fa fa-user"></i> <a href="#">John doe</a></li>
+													<li><i class="fa fa-file"></i> <a href="#">App</a></li>
+													<li><i class="fa fa-comment"></i> <a href="#">3</a></li>
+												</ul>
+											</div>
+											<div class="article-post">
+												<p>
+												Harum accusata at pro, mea ne enim probo mediocrem. Vel ei voluptua ponderum phaedrum, pro atqui intellegam id. Clita perpetua pri et, in vis suas invenire definitionem.
+												</p>
+												<a href="singlepost.html">Read more...</a>
+											</div>
+										</div>	
+									</div>
+								</li>								
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+	</section>
+	<!-- End blog -->
+
+	<!-- Start pricing box 
+	<section id="pricing" class="contain colorbg">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="divider clearfix"></div>
+					<h4 class="heading wow flipInX" data-wow-delay="0.2s"><span>Pricing box</span></h4>
+					<div class="pricing-wrapper">
+						<i class="fa fa-table icon-title wow rotateIn" data-wow-delay="0.4s"></i>
+						<div class="row">
+							<div class="col-md-4">
+								<div class="pricing-box wow bounceInDown" data-wow-delay="0.4s">
+									<div class="pricing-head">
+										<h4>Basic</h4>
+										<div class="pricing-price">
+											<span class="price">$5.55</span>
+											<span class="time">/month</span>
+										</div>
+									</div>
+									<div class="pricing-body">
+										<ul>
+											<li>No update</li>
+											<li>32 Mbps Download speed</li>
+											<li>3 month services</li>
+											<li>No business aplication</li>
+											<li>Support android only</li>
+											<li class="bottom"><a href="#" class="btn btn-default btn-lg">Get it now</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="pricing-box centered wow bounceInDown" data-wow-delay="0.6s">
+									<div class="pricing-head">
+										<h4>Perofessional</h4>
+										<div class="pricing-price">
+											<span class="price">$17.55</span>
+											<span class="time">/month</span>
+										</div>
+									</div>
+									<div class="pricing-body">
+										<ul>
+											<li>Free update</li>
+											<li>128 Mbps Download speed</li>
+											<li>1 year services</li>
+											<li>No business aplication</li>
+											<li>Support on IOS</li>
+											<li class="bottom"><a href="#" class="btn btn-default btn-lg">Get it now</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="pricing-box wow bounceInDown" data-wow-delay="0.8s">
+									<div class="pricing-head">
+										<h4>Business</h4>
+										<div class="pricing-price">
+											<span class="price">$28.55</span>
+											<span class="time">/month</span>
+										</div>
+									</div>
+									<div class="pricing-body">
+										<ul>
+											<li>Free update</li>
+											<li>256 Mbps Download speed</li>
+											<li>4 year services</li>
+											<li>Business aplication included</li>
+											<li>Support on IOS</li>
+											<li class="bottom"><a href="#" class="btn btn-default btn-lg">Get it now</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>						
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</section>
+	<!-- End pricing box -->
+
+	<!-- Start contact 
+	<section id="contact" class="contain colorbg">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="divider clearfix"></div>
+					<h4 class="heading wow flipInX" data-wow-delay="0.2s"><span>Contact us</span></h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="contact-wrapper">
+						<i class="fa fa-envelope icon-title wow rotateIn" data-wow-delay="0.4s"></i>
+						<div class="contact-body wow rotateInDownLeft" data-wow-delay="0.4s">
+							<p>
+							<strong>Address :</strong> Jl.Kemacetan terus No.3 Block.R2 Jakarata - Indonesia<br />
+							<strong>Phone :</strong> +6221 999 999 22 - <strong>Email :</strong> info@yourdomain.com
+							</p>
+							<form id="contactform" action="contact/contact.php" method="post" class="validateform" name="leaveContact">
+								<div class="clearfix"></div>
+								<div id="sendmessage">
+									<div class="alert alert-info marginbot35">
+										<button type="button" class="close" data-dismiss="alert">&times;</button>
+										<strong>Your message has been sent. Thank you!</strong><br />
+									</div>							
+								</div>								
+								<ul class="listForm cbp-so-section">
+									<li class="first-list cbp-so-side cbp-so-side-left">
+										<input class="form-control input-name input-lg" type="text" name="name" data-rule="maxlen:4" data-msg="Required field" placeholder="Enter your full name . . ." />
+										<div class="validation"></div>
+									</li>
+									<li class="cbp-so-side cbp-so-side-right">
+										<input class="form-control input-email input-lg" type="text" name="email" data-rule="email" data-msg="Please enter a valid email" placeholder="Enter your email address . . ."/>	
+										<div class="validation"></div>
+									</li>
+									<li class="full-list cbp-so-side cbp-so-side-bottom">
+										<textarea class="form-control input-message input-lg" rows="9" name="message" data-rule="required" data-msg="Please write something for us" placeholder="Write something for us . . ."></textarea>												
+										<div class="validation"></div>
+									</li>
+									<li class="full-list text-center cbp-so-side cbp-so-side-bottom">
+										<input type="submit" value="Send message" class="btn btn-default btn-lg" name="Submit" />
+									</li>
+								</ul>
+							</form>
+						</div>
+					</div>
+					<div class="divider pull-left"></div>
+				</div>
+			</div>
+		</div>	
+	</section>
+	<!-- End contact -->
+	
+	<!-- Start footer -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<a href="#home" class="totop wow rotateIn btn-scroll" data-wow-delay="0.4s"><i class="fa fa-chevron-up"></i></a>
+					<p>
+					Negotiation 360&deg;
+					</p>
+					<a href="http://negotiation3-0.com/" target ="blank" class="social-network wow bounceInDown" data-wow-delay="0.2s"><i class="fa fa-globe"></i></a>
+					<a href="https://www.linkedin.com/influencer/266437464-Michael-Wheeler" target ="blank" class="social-network wow bounceInDown" data-wow-delay="0.4s"><i class="fa fa-linkedin"></i></a>
+					<a href="http://www.amazon.com/Art-Negotiation-Improvise-Agreement-Chaotic/dp/1451690428/ref=la_B001HMNL0G_1_2?ie=UTF8&qid=1361979390&sr=1-2" target="blank" class="social-network wow bounceInDown" data-wow-delay="0.6s"><i class="fa fa-book"></i></a>
+					<a href="itunes.apple.com/app/id949271941" target ="blank" class="social-network wow bounceInDown" data-wow-delay="0.8s"><i class="fa fa-apple"></i></a>
+					<!-- <a href="#" class="social-network wow bounceInDown" data-wow-delay="1s"><i class="fa fa-pinterest"></i></a>
+					<a href="#" class="social-network wow bounceInDown" data-wow-delay="1.2s"><i class="fa fa-dribbble"></i></a> -->
+				</div>
+			</div>
+		</div>
+		<div class="subfooter">
+			<p class="copyrigh">2015 &copy; Copyright <!-- <a href="www.99webpage.com"> -->Negotiation 360&deg;</a>. All rights Reserved.</p>
+		</div>
+	</footer>
+	<!-- End footer -->
+	
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+	<!-- Fixed navigation -->
+	<script src="js/navigation/jquery.smooth-scroll.js"></script>	
+	<script src="js/navigation/navbar.js"></script>	
+	<script src="js/navigation/waypoints.min.js"></script>
+	
+	<!-- WOW JavaScript -->
+	<script src="js/wow.min.js"></script>
+	
+	<!-- Profile ChartNew -->
+	<script src="js/ChartNew.js"></script>
+	<script>
+	var radarChartData = {
+		labels: ['CREATING VALUE', 'EMPATHY', 'CLAIMING VALUE', 'ASSERT'],
+		datasets: [
+			{
+				label: "My Negotiation Profile",
+				fillColor: "rgba(255,159,51,0.2)",
+				strokeColor: "rgba(255,159,51,1)",
+				pointColor: "rgba(255,159,51,1)",
+				pointStrokeColor: "#fff",
+				pointHighlightFill: "#fff",
+				pointHighlightStroke: "rgba(255,159,51,1)",
+				data: [1,3,5,7]
+			}
+		]
+	};
+
+	window.onload = function(){
+		var ctx = document.getElementById("canvas").getContext("2d");
+		window.myRadarChart = new Chart(ctx).Radar(radarChartData, {
+			responsive: true,
+			maintainAspectRatio: false,
+			angleLineColor : "rgba(255,255,255,.5)",
+			scaleShowLine : false,
+			scaleShowLabels : false,
+			pointLabelFontSize : 14,
+			pointLabelFontColor : "white",
+		    animationSteps: 200,
+		    scaleOverride: true,
+		    scaleSteps: 2,
+		    scaleStepWidth: 4,
+		    datasetStrokeWidth : 4,
+		    pointDotRadius : 4,
+		    annotateDisplay : true,
+		    scaleStartValue: 0
+		});
+	}
+
+	</script>
+
+	<!-- Best Practices Charts -->
+	
+	<script>
+	$(function () {
+
+	    $(document).ready(function () {
+                          
+
+
+	        // Build the chart
+			var agreementPieData = [
+					{
+						value: 1,
+						color: "#2ee478",
+						highlight: "#58E993",
+						title: "Yes",
+					},
+					{
+						value: 1,
+						color:"#DF5353",
+						highlight: "#E57575",
+						title: "No"
+					},
+					{
+						value: 0,
+						color:"#ff9f33",
+						highlight: "#FFB25C",
+						title: "Not Yet"
+					}
+				];
+
+			var typePieData = 	[
+					{
+						value: 1,
+						color:"#ff9f33",
+						highlight: "#FFB25C",
+						title: "Prof(Outside)",
+					},
+					{
+						value: 1,
+						color: "#445ae1",
+						highlight: "#697BE7",
+						title: "Prof(Inside)"
+					},
+					{
+						value: 0,
+						color: "#2ee478",
+						highlight: "#58E993",
+						title: "Personal"
+					},
+					{
+						value: 0,
+						color:"#DF5353",
+						highlight: "#E57575",
+						title: "Community",
+					},
+					{
+						value: 0,
+						color: "#aaeeee",
+						highlight: "#BBF1F1",
+						title: "Family"
+					}
+				];
+
+			var importanceBarData = {
+					labels : [1,2,3],
+					datasets : [
+						{
+							title : "Importance",
+							fillColor : "#ff9f33",
+							strokeColor : "#ff9f33",
+							highlightFill: "#FFB25C",
+							highlightStroke: "#FFB25C",
+							data : [40,90,70]
+						},
+						{
+							title : "Satisfaction",
+							fillColor : "#445ae1",
+							strokeColor : "#445ae1",
+							highlightFill : "#697BE7",
+							highlightStroke : "#697BE7",
+							data : [50,0,40]
+						}
+					]
+
+				};
+
+				var agree = document.getElementById("agree-canvas").getContext("2d");
+				window.myAgreePieChart = new Chart(agree).Pie(agreementPieData,{
+					responsive: true,
+					animateScale : false,
+					maintainAspectRatio: true,
+					animateRotate : true,
+				    animateScale : false,
+				    animationByData : false,
+				    animationSteps : 200,
+				    legend : true,
+				    animationEasing: "linear",
+				    annotateDisplay : true
+				});
+				var type = document.getElementById("type-canvas").getContext("2d");
+				window.myTypePieChart = new Chart(type).Pie(typePieData,{
+					responsive: true,
+					animateScale : false,
+					maintainAspectRatio: true,
+					animateRotate : true,
+				    animateScale : false,
+				    animationByData : false,
+				    animationSteps : 200,
+				    legend : true,
+				    animationEasing: "linear",
+				    annotateDisplay : true
+				});
+				var importance = document.getElementById("importance-canvas").getContext("2d");
+				window.myImportanceBarChart = new Chart(importance).Bar(importanceBarData,{
+				    responsive: true,
+					maintainAspectRatio: true,
+					scaleOverride: true,
+				    scaleSteps: 5,
+				    scaleStepWidth: 20,
+				    scaleStartValue: 0,
+				    animationSteps : 200,
+				    legend : true,
+				    inGraphDataShow : true,
+				    annotateDisplay : true
+				});
+				var agreelegend = myAgreePieChart.generateLegend();
+				$("#agreelegend").html(agreelegend);
+
+				var typelegend = myTypePieChart.generateLegend();
+				$("#typelegend").html(typelegend);
+
+				var importancelegend = myImportanceBarChart.generateLegend();
+				$("#importancelegend").html(importancelegend);
+
+
+	    });
+	});
+
+	</script>
+
+	<!-- Circliful -->
+	<script src="js/jquery.circliful.js"></script>
+	<script>
+	$( document ).ready(function() {
+			$('#importance').circliful();
+			$('#satisfaction').circliful();
+			$('#importance2').circliful();
+			$('#satisfaction2').circliful();
+			$('#importance3').circliful();
+			$('#satisfaction3').circliful();
+	    });
+	</script>
+
+	<!-- JavaScript bgSlider slider -->
+	<script src="js/bgslider/bgSlider.js"></script>		
+
+	<!-- JavaScript  slider -->
+	<script type='text/javascript' src="js/bootstrap-slider.js"></script>		
+    <script type='text/javascript'>
+	$(document).ready(function() {
+		var sliderImportant = new Slider('#sliderImportant', {
+			formatter: function(value) {
+				return 'Current value: ' + value;
+			}
+		});
+		var sliderSatisfied = new Slider('#sliderSatisfied', {
+			formatter: function(value) {
+			return 'Current value: ' + value;
+			}
+		});
+	});
+	</script>
+
+	<!-- bootstrap spinner -->
+	<script src="js/jquery.bootstrap-touchspin.js"></script>
+	<script>
+        $("input[name='create']").TouchSpin({
+        	min: 1,
+        	max: 7
+        });
+        $("input[name='assert']").TouchSpin({
+        	min: 1,
+          	max: 7
+        });
+        $("input[name='empathy']").TouchSpin({
+        	min: 1,
+        	max: 7
+        });
+        $("input[name='claim']").TouchSpin({
+        	min: 1,
+        	max: 7
+        });
+    </script>
+
+	<!-- Flexslider -->
+	<script src="js/flexslider/jquery.flexslider.js"></script>
+    <script src="js/flexslider/setting.js"></script>
+
+	<!-- prettyPhoto -->
+	<script src="js/prettyPhoto/jquery.prettyPhoto.js"></script>
+	<script src="js/prettyPhoto/setting.js"></script>
+
+	<!-- Contact validation js -->
+    <script src="js/validation.js"></script>
+	
+	<!-- Custom JavaScript -->
+	<script src="js/custom.js"></script>
+	
+  </body>
+</html>
