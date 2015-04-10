@@ -295,82 +295,30 @@
 					<div class="profile-wrapper">
 						<i class="fa fa-user icon-title wow rotateIn" data-wow-delay="0.4s"></i>
 						<div class="flexslider wow rotateInDownLeft" data-wow-delay="0.4s">
-							<!-- <ul class="slides"> -->
-								<!-- <li> -->
-									<div class="profile-box">
-										<div class="profile-text" style="background-color: #3399cc">
-											<div>
-												<h3 style="color:#ffffff"><span>Your</span> Profile Here</h3>
-											</div>
-											<div>
-												<canvas id="canvas" width="300" height="250"></canvas>
-											</div>
-											<div>
-												<p style="color:#ffffff">The ratings you entered most closely match those of Assertive Value-Claimer. You have an above average confidence in asserting your interests and maximizing your slice of the pie.</p>
-											</div>
-										</div>
-										<div class="profile-text">
-											<br><br><br>
-											<p>
-												The Self-assessment feature prompts you to create a personalized profile reflecting your basic negotiation style. It also explains fundamental tensions in negotiation that you must address in formulating strategy.
-											</p>
-											<p>
-												Click try it now below to discover your negotiaiton profile then dowload the app to learn more about your personal strengths and weaknesses.
-											</p>
-											<!-- <span class="company-name">Client company</span> -->
-											<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#profileModal">Try it now</button>
-										</div>
+							<div class="profile-box">
+								<div class="profile-text" style="background-color: #3399cc">
+									<div>
+										<h3 style="color:#ffffff"><span>Your</span> Profile Here</h3>
 									</div>
-								<!-- </li> -->
-								<!-- <li> -->
-									<!-- <div class="profile-box">
-										<div class="profile-avatar">
-											<img src="img/avatar/avatar2.jpg" class="img-responsive" alt="" />
-										</div>
-										<div class="profile-text">
-											<h3><span>Anne</span> block</h3>
-											<blockquote>
-												<p>
-												Eam facer elaboraret ea, ad eos nullam consulatu maiestatis. Eum mazim simul ne, dicta mnesarchum duo no, ex nec graece verear quodsi mentitum iudicabit.
-												</p>
-											</blockquote>
-											<span class="company-name">Client company</span>
-										</div>
+									<div>
+										<canvas id="canvas" width="300" height="250"></canvas>
 									</div>
-								</li>
-								<li>
-									<div class="profile-box">
-										<div class="profile-avatar">
-											<img src="img/avatar/avatar3.jpg" class="img-responsive" alt="" />
-										</div>
-										<div class="profile-text">
-											<h3><span>Alex</span> noah</h3>
-											<blockquote>
-												<p>
-												Disputando dissentiunt ei pro, equidem tibique maluisset et his. Graeci habemus pro in, ei eam quas vivendum comprehensam.
-												</p>
-											</blockquote>
-											<span class="company-name">Client company</span>
-										</div>
+									<div>
+										<p style="color:#ffffff">The ratings you entered most closely match those of Assertive Value-Claimer. You have an above average confidence in asserting your interests and maximizing your slice of the pie.</p>
 									</div>
-								</li>
-								<li>
-									<div class="profile-box">
-										<div class="profile-avatar">
-											<img src="img/avatar/avatar4.jpg" class="img-responsive" alt="" />
-										</div>
-										<div class="profile-text">
-											<h3><span>Jean</span> roll</h3>
-											<blockquote>
-												<p>
-												No erat dicat vis. Sea an apeirian inciderint, quo id dico agam cotidieque, pro exerci latine eu. Sea cibo alterum antiopam ei.
-												</p>
-											</blockquote>
-											<span class="company-name">Client company</span>
-										</div>
-									</div>
-								</li>
-							</ul> -->
+								</div>
+								<div class="profile-text">
+									<br><br><br>
+									<p>
+										The Self-assessment feature prompts you to create a personalized profile reflecting your basic negotiation style. It also explains fundamental tensions in negotiation that you must address in formulating strategy.
+									</p>
+									<p>
+										Click try it now below to discover your negotiaiton profile then dowload the app to learn more about your personal strengths and weaknesses.
+									</p>
+									<!-- <span class="company-name">Client company</span> -->
+									<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#profileModal">Try it now</button>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -413,14 +361,14 @@
 				            </div>
 				            <div class="row">
 				            	<div class="col-md-10"></div>
-				            	<div class="col-md-2" style="text-align:center"><h4>16</h4></div>
+				            	<div class="col-md-2" style="text-align:center"><h4 id="profileTotal"></h4></div>
 				            </div>
 				        </form>
 			        </div>
 	      </div>
 	      <div class="modal-footer">
-	      	<div class="alert alert-danger" role="alert">Remember, numbers must sum to 16. Please try again.</div>
-	        <button type="button" class="btn btn-primary">Save changes</button>
+	      	<div id="profileModalFooterAlert" class="alert alert-danger" role="alert">Remember, numbers must sum to 16. Please try again.</div>
+	        <button id="profileModalSaveButton" type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Save">Save changes</button>
 	      </div>
 	    </div>
 	  </div>
@@ -547,7 +495,7 @@
 	        <h4 class="modal-title" id="myModalLabel">Scorecard: Try It!</h4>
 	      </div>
 	      <div class="modal-body">
-	        <form class="form-horizontal">
+	        <form id="scorecardForm" class="form-horizontal">
         	  	<div class="form-group">
 			    	<label for="negotiationName" class="col-sm-4 control-label">Negotiation Name</label>
 			    		<div class="col-sm-8">
@@ -557,7 +505,7 @@
 			  	<div class="form-group">
   					<label for="sel1" class="col-sm-4 control-label">Negotiation Type</label>
 		    		<div class="col-sm-8">
-						<select class="form-control">
+						<select id="negotiationTypeSelect" class="form-control">
 					  		<option>Select a negotiation type below..</option>
 					  		<option>Professional, with outside parties (vendors, customers, stakeholders, etc.)</option>
 					  		<option>Professional, with colleagues within your organization</option>
@@ -569,19 +517,19 @@
 				</div>
         	  	<div class="form-group">
 			    	<label for="formImportant" class="col-sm-7 control-label">How important was this negotiation?</label>
-					<input id="sliderImportant" data-slider-id='sliderImportant' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="10" data-slider-value="50"/>
+					<input id="sliderImportant" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="50"/>
 			  	</div>
         	  	<div class="form-group">
 			    	<label for="negotiationName" class="col-sm-5 control-label">Did you reach an agreement?</label>
 			    		<div class="col-sm-7">
 			    			<label class="radio-inline">
-							  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Yes
+							  <input type="radio" name="negotationAgreement" id="inlineRadio1" value="option1"> Yes
 							</label>
 							<label class="radio-inline">
-							  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> No
+							  <input type="radio" name="negotationAgreement" id="inlineRadio2" value="option2"> No
 							</label>
 							<label class="radio-inline">
-							  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Not Yet
+							  <input type="radio" name="negotationAgreement" id="inlineRadio3" value="option3"> Not Yet
 							</label>
 			    		</div>
 			  	</div>
@@ -592,7 +540,7 @@
 			</form>
 	      </div>
 	      <div class="modal-footer">
-	        <button type="button" class="btn btn-primary">Save changes</button>
+	        <button id="scorecardModalSaveButton" type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Save">Save changes</button>
 	      </div>
 	    </div>
 	  </div>
@@ -984,333 +932,6 @@
 	</section>
 	<!-- End app images -->
 
-	<!-- Start team
-	<section id="team" class="contain colorbg">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-10 col-md-offset-1">
-					<div class="divider clearfix"></div>
-					<h4 class="heading wow flipInX" data-wow-delay="0.2s"><span>Best Practices</span></h4>
-					<div class="team-wrapper">
-						<div class="team">
-							<i class="fa fa-star icon-title centered wow rotateIn" data-wow-delay="0.4s"></i>
-							<div class="team-left">
-								<div class="team-box wow bounceInDown" data-wow-delay="0.4s">
-									<div class="team-profile">
-										<h6>John doe</h6>
-										<p>Web designer</p>
-										<a href="#"><i class="fa fa-facebook icon-social"></i></a>
-										<a href="#"><i class="fa fa-twitter icon-social"></i></a>
-										<a href="#"><i class="fa fa-linkedin icon-social"></i></a>
-									</div>
-									<img src="img/team/team1.png" class="img-responsive" alt="" />
-								</div>
-								<div class="team-box  wow bounceInDown" data-wow-delay="0.6s">
-									<div class="team-profile">
-										<h6>John doe</h6>
-										<p>Web designer</p>
-										<a href="#"><i class="fa fa-facebook icon-social"></i></a>
-										<a href="#"><i class="fa fa-twitter icon-social"></i></a>
-										<a href="#"><i class="fa fa-linkedin icon-social"></i></a>
-									</div>
-									<img src="img/team/team2.png" class="img-responsive" alt="" />
-								</div>
-							</div>
-							<div class="team-right">
-								<div class="team-box wow bounceInDown" data-wow-delay="0.8s">
-									<div class="team-profile">
-										<h6>John doe</h6>
-										<p>Web designer</p>
-										<a href="#"><i class="fa fa-facebook icon-social"></i></a>
-										<a href="#"><i class="fa fa-twitter icon-social"></i></a>
-										<a href="#"><i class="fa fa-linkedin icon-social"></i></a>
-									</div>
-									<img src="img/team/team3.png" class="img-responsive" alt="" />
-								</div>
-								<div class="team-box wow bounceInDown" data-wow-delay="1s">
-									<div class="team-profile">
-										<h6>John doe</h6>
-										<p>Web designer</p>
-										<a href="#"><i class="fa fa-facebook icon-social"></i></a>
-										<a href="#"><i class="fa fa-twitter icon-social"></i></a>
-										<a href="#"><i class="fa fa-linkedin icon-social"></i></a>
-									</div>
-									<img src="img/team/team4.png" class="img-responsive" alt="" />
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End team -->
-
-	<!-- Start blog
-	<section id="blog" class="contain colorbg">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="divider clearfix"></div>
-					<h4 class="heading wow flipInX" data-wow-delay="0.2s"><span>Resources &amp; More</span></h4>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2">
-					<div class="blog-wrapper">
-						<i class="fa fa-lightbulb-o icon-title wow rotateIn" data-wow-delay="0.4s"></i>
-						<div class="flexslider wow rotateInDownLeft" data-wow-delay="0.4s">
-							<ul class="slides">
-								<li>
-									<div class="blog-box">
-										<div class="blog-thumbls">
-											<img src="img/blog/thumbs/1.jpg" class="img-responsive" alt="" />
-										</div>
-										<div class="artcle">
-											<div class="article-head">
-												<div class="date-post">
-													<span class="date">12</span>
-													<span class="mo-year">06-2014</span>
-												</div>
-												<h5>Quo autem complecit porro commodo</h5>
-												<ul class="meta-post">
-													<li><i class="fa fa-user"></i> <a href="#">John doe</a></li>
-													<li><i class="fa fa-file"></i> <a href="#">App</a></li>
-													<li><i class="fa fa-comment"></i> <a href="#">3</a></li>
-												</ul>
-											</div>
-											<div class="article-post">
-												<p>
-												Harum accusata at pro, mea ne enim probo mediocrem. Vel ei voluptua ponderum phaedrum, pro atqui intellegam id. Clita perpetua pri et, in vis suas invenire definitionem.
-												</p>
-												<a href="singlepost.html">Read more...</a>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="blog-box">
-										<div class="blog-thumbls">
-											<img src="img/blog/thumbs/2.jpg" class="img-responsive" alt="" />
-										</div>
-										<div class="artcle">
-											<div class="article-head">
-												<div class="date-post">
-													<span class="date">10</span>
-													<span class="mo-year">06-2014</span>
-												</div>
-												<h5>Quo autem complecit porro commodo</h5>
-												<ul class="meta-post">
-													<li><i class="fa fa-user"></i> <a href="#">John doe</a></li>
-													<li><i class="fa fa-file"></i> <a href="#">App</a></li>
-													<li><i class="fa fa-comment"></i> <a href="#">3</a></li>
-												</ul>
-											</div>
-											<div class="article-post">
-												<p>
-												Harum accusata at pro, mea ne enim probo mediocrem. Vel ei voluptua ponderum phaedrum, pro atqui intellegam id. Clita perpetua pri et, in vis suas invenire definitionem.
-												</p>
-												<a href="singlepost.html">Read more...</a>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="blog-box">
-										<div class="blog-thumbls">
-											<img src="img/blog/thumbs/3.jpg" class="img-responsive" alt="" />
-										</div>
-										<div class="artcle">
-											<div class="article-head">
-												<div class="date-post">
-													<span class="date">08</span>
-													<span class="mo-year">06-2014</span>
-												</div>
-												<h5>Quo autem complecit porro commodo</h5>
-												<ul class="meta-post">
-													<li><i class="fa fa-user"></i> <a href="#">John doe</a></li>
-													<li><i class="fa fa-file"></i> <a href="#">App</a></li>
-													<li><i class="fa fa-comment"></i> <a href="#">3</a></li>
-												</ul>
-											</div>
-											<div class="article-post">
-												<p>
-												Harum accusata at pro, mea ne enim probo mediocrem. Vel ei voluptua ponderum phaedrum, pro atqui intellegam id. Clita perpetua pri et, in vis suas invenire definitionem.
-												</p>
-												<a href="singlepost.html">Read more...</a>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="blog-box">
-										<div class="blog-thumbls">
-											<img src="img/blog/thumbs/4.jpg" class="img-responsive" alt="" />
-										</div>
-										<div class="artcle">
-											<div class="article-head">
-												<div class="date-post">
-													<span class="date">02</span>
-													<span class="mo-year">06-2014</span>
-												</div>
-												<h5>Quo autem complecit porro commodo</h5>
-												<ul class="meta-post">
-													<li><i class="fa fa-user"></i> <a href="#">John doe</a></li>
-													<li><i class="fa fa-file"></i> <a href="#">App</a></li>
-													<li><i class="fa fa-comment"></i> <a href="#">3</a></li>
-												</ul>
-											</div>
-											<div class="article-post">
-												<p>
-												Harum accusata at pro, mea ne enim probo mediocrem. Vel ei voluptua ponderum phaedrum, pro atqui intellegam id. Clita perpetua pri et, in vis suas invenire definitionem.
-												</p>
-												<a href="singlepost.html">Read more...</a>
-											</div>
-										</div>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End blog -->
-
-	<!-- Start pricing box
-	<section id="pricing" class="contain colorbg">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="divider clearfix"></div>
-					<h4 class="heading wow flipInX" data-wow-delay="0.2s"><span>Pricing box</span></h4>
-					<div class="pricing-wrapper">
-						<i class="fa fa-table icon-title wow rotateIn" data-wow-delay="0.4s"></i>
-						<div class="row">
-							<div class="col-md-4">
-								<div class="pricing-box wow bounceInDown" data-wow-delay="0.4s">
-									<div class="pricing-head">
-										<h4>Basic</h4>
-										<div class="pricing-price">
-											<span class="price">$5.55</span>
-											<span class="time">/month</span>
-										</div>
-									</div>
-									<div class="pricing-body">
-										<ul>
-											<li>No update</li>
-											<li>32 Mbps Download speed</li>
-											<li>3 month services</li>
-											<li>No business aplication</li>
-											<li>Support android only</li>
-											<li class="bottom"><a href="#" class="btn btn-default btn-lg">Get it now</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="pricing-box centered wow bounceInDown" data-wow-delay="0.6s">
-									<div class="pricing-head">
-										<h4>Perofessional</h4>
-										<div class="pricing-price">
-											<span class="price">$17.55</span>
-											<span class="time">/month</span>
-										</div>
-									</div>
-									<div class="pricing-body">
-										<ul>
-											<li>Free update</li>
-											<li>128 Mbps Download speed</li>
-											<li>1 year services</li>
-											<li>No business aplication</li>
-											<li>Support on IOS</li>
-											<li class="bottom"><a href="#" class="btn btn-default btn-lg">Get it now</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="pricing-box wow bounceInDown" data-wow-delay="0.8s">
-									<div class="pricing-head">
-										<h4>Business</h4>
-										<div class="pricing-price">
-											<span class="price">$28.55</span>
-											<span class="time">/month</span>
-										</div>
-									</div>
-									<div class="pricing-body">
-										<ul>
-											<li>Free update</li>
-											<li>256 Mbps Download speed</li>
-											<li>4 year services</li>
-											<li>Business aplication included</li>
-											<li>Support on IOS</li>
-											<li class="bottom"><a href="#" class="btn btn-default btn-lg">Get it now</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End pricing box -->
-
-	<!-- Start contact
-	<section id="contact" class="contain colorbg">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="divider clearfix"></div>
-					<h4 class="heading wow flipInX" data-wow-delay="0.2s"><span>Contact us</span></h4>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2">
-					<div class="contact-wrapper">
-						<i class="fa fa-envelope icon-title wow rotateIn" data-wow-delay="0.4s"></i>
-						<div class="contact-body wow rotateInDownLeft" data-wow-delay="0.4s">
-							<p>
-							<strong>Address :</strong> Jl.Kemacetan terus No.3 Block.R2 Jakarata - Indonesia<br />
-							<strong>Phone :</strong> +6221 999 999 22 - <strong>Email :</strong> info@yourdomain.com
-							</p>
-							<form id="contactform" action="contact/contact.php" method="post" class="validateform" name="leaveContact">
-								<div class="clearfix"></div>
-								<div id="sendmessage">
-									<div class="alert alert-info marginbot35">
-										<button type="button" class="close" data-dismiss="alert">&times;</button>
-										<strong>Your message has been sent. Thank you!</strong><br />
-									</div>
-								</div>
-								<ul class="listForm cbp-so-section">
-									<li class="first-list cbp-so-side cbp-so-side-left">
-										<input class="form-control input-name input-lg" type="text" name="name" data-rule="maxlen:4" data-msg="Required field" placeholder="Enter your full name . . ." />
-										<div class="validation"></div>
-									</li>
-									<li class="cbp-so-side cbp-so-side-right">
-										<input class="form-control input-email input-lg" type="text" name="email" data-rule="email" data-msg="Please enter a valid email" placeholder="Enter your email address . . ."/>
-										<div class="validation"></div>
-									</li>
-									<li class="full-list cbp-so-side cbp-so-side-bottom">
-										<textarea class="form-control input-message input-lg" rows="9" name="message" data-rule="required" data-msg="Please write something for us" placeholder="Write something for us . . ."></textarea>
-										<div class="validation"></div>
-									</li>
-									<li class="full-list text-center cbp-so-side cbp-so-side-bottom">
-										<input type="submit" value="Send message" class="btn btn-default btn-lg" name="Submit" />
-									</li>
-								</ul>
-							</form>
-						</div>
-					</div>
-					<div class="divider pull-left"></div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End contact -->
 
 	<!-- Start footer -->
 	<footer>
@@ -1352,6 +973,12 @@
 
 	<!-- Profile ChartNew -->
 	<script src="js/ChartNew.js"></script>
+
+	<!-- Profile ChartNew -->
+	<script src="js/app/app.js"></script>
+	<script src="js/app/profile.js"></script>
+	<script src="js/app/scorecard.js"></script>
+
 	<script>
 	var radarChartData = {
 		labels: ['CREATING VALUE', 'EMPATHY', 'CLAIMING VALUE', 'ASSERT'],
@@ -1553,16 +1180,7 @@
 	<script type='text/javascript' src="js/bootstrap-slider.js"></script>
     <script type='text/javascript'>
 	$(document).ready(function() {
-		var sliderImportant = new Slider('#sliderImportant', {
-			formatter: function(value) {
-				return 'Current value: ' + value;
-			}
-		});
-		var sliderSatisfied = new Slider('#sliderSatisfied', {
-			formatter: function(value) {
-			return 'Current value: ' + value;
-			}
-		});
+
 	});
 	</script>
 
