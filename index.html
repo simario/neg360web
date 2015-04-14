@@ -561,21 +561,21 @@
 							<div class="row">
 								<div class="col-md-4" style="text-align:center">
 									<h4>Agreement Rate <a href="javascript://" data-toggle="modal" data-target="#myAgreeModal" style="color:#ff9f33"><i class="fa fa-info-circle" style="font-size: 20px;float:right; margin: 10px 0px"></i></a></h4>
-									<div>
+									<div id="agreeCanvasContainer">
 										<canvas id="agree-canvas" width="150" height="150" ></canvas>
 									</div>
 									<div id="agreelegend"></div>
 								</div>
 								<div class="col-md-4">
 									<h4>Importance &amp; Satisfaction <a href="javascript://" data-toggle="modal" data-target="#myImportanceModal" style="color:#ff9f33"><i class="fa fa-info-circle" style="font-size: 20px;float:right; margin: 10px 0px"></i></a></h4>
-									<div>
+									<div id="importanceCanvasContainer">
 										<canvas id="importance-canvas" width="150" height="150"></canvas>
 									</div>
 									<div id="importancelegend"></div>
 								</div>
 								<div class="col-md-4">
 									<h4>Negotiation Type <a href="javascript://" data-toggle="modal" data-target="#myTypeModal" style="color:#ff9f33"><i class="fa fa-info-circle" style="font-size: 20px;float:right; margin: 10px 0px"></i></a></h4>
-									<div>
+									<div id="typeCanvasContainer">
 										<canvas id="type-canvas" width="150" height="150" style="text-align: left"></canvas>
 									</div>
 									<div id="typelegend">
@@ -892,149 +892,7 @@
 	<script src="js/app/app.js"></script>
 	<script src="js/app/profile.js"></script>
 	<script src="js/app/scorecard.js"></script>
-
-	<!-- Best Practices Charts -->
-
-	<script>
-	$(function () {
-
-	    $(document).ready(function () {
-
-
-
-	        // Build the chart
-			var agreementPieData = [
-					{
-						value: 1,
-						color: "#2ee478",
-						highlight: "#58E993",
-						title: "Yes",
-					},
-					{
-						value: 1,
-						color:"#DF5353",
-						highlight: "#E57575",
-						title: "No"
-					},
-					{
-						value: 0,
-						color:"#ff9f33",
-						highlight: "#FFB25C",
-						title: "Not Yet"
-					}
-				];
-
-			var typePieData = 	[
-					{
-						value: 1,
-						color:"#ff9f33",
-						highlight: "#FFB25C",
-						title: "Prof(Outside)",
-					},
-					{
-						value: 1,
-						color: "#445ae1",
-						highlight: "#697BE7",
-						title: "Prof(Inside)"
-					},
-					{
-						value: 0,
-						color: "#2ee478",
-						highlight: "#58E993",
-						title: "Personal"
-					},
-					{
-						value: 0,
-						color:"#DF5353",
-						highlight: "#E57575",
-						title: "Community",
-					},
-					{
-						value: 0,
-						color: "#aaeeee",
-						highlight: "#BBF1F1",
-						title: "Family"
-					}
-				];
-
-			var importanceBarData = {
-					labels : [1,2,3],
-					datasets : [
-						{
-							title : "Importance",
-							fillColor : "#ff9f33",
-							strokeColor : "#ff9f33",
-							highlightFill: "#FFB25C",
-							highlightStroke: "#FFB25C",
-							data : [40,90,70]
-						},
-						{
-							title : "Satisfaction",
-							fillColor : "#445ae1",
-							strokeColor : "#445ae1",
-							highlightFill : "#697BE7",
-							highlightStroke : "#697BE7",
-							data : [50,0,40]
-						}
-					]
-
-				};
-
-				var agree = document.getElementById("agree-canvas").getContext("2d");
-				window.myAgreePieChart = new Chart(agree).Pie(agreementPieData,{
-					responsive: true,
-					animateScale : false,
-					maintainAspectRatio: true,
-					animateRotate : true,
-				    animateScale : false,
-				    animationByData : false,
-				    animationSteps : 200,
-				    legend : true,
-				    animationEasing: "linear",
-				    annotateDisplay : true
-				});
-				var type = document.getElementById("type-canvas").getContext("2d");
-				window.myTypePieChart = new Chart(type).Pie(typePieData,{
-					responsive: true,
-					animateScale : false,
-					maintainAspectRatio: true,
-					animateRotate : true,
-				    animateScale : false,
-				    animationByData : false,
-				    animationSteps : 200,
-				    legend : true,
-				    animationEasing: "linear",
-				    annotateDisplay : true
-				});
-				var importance = document.getElementById("importance-canvas").getContext("2d");
-				window.myImportanceBarChart = new Chart(importance).Bar(importanceBarData,{
-				    responsive: true,
-					maintainAspectRatio: true,
-					scaleOverride: true,
-				    scaleSteps: 5,
-				    scaleStepWidth: 20,
-				    scaleStartValue: 0,
-				    animationSteps : 200,
-				    legend : true,
-				    inGraphDataShow : true,
-				    annotateDisplay : true
-				});
-
-			/*
-				var agreelegend = window.myAgreePieChart.generateLegend();
-				$("#agreelegend").html(agreelegend);
-
-				var typelegend = window.myTypePieChart.generateLegend();
-				$("#typelegend").html(typelegend);
-
-				var importancelegend = window.myImportanceBarChart.generateLegend();
-				$("#importancelegend").html(importancelegend);
-			*/
-
-	    });
-	});
-
-	</script>
+	<script src="js/app/bestpractices.js"></script>
 
 	<!-- Circliful -->
 	<script src="js/jquery.circliful.js"></script>
