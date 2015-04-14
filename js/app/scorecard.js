@@ -16,21 +16,18 @@ App.Scorecard = {
         var agreementReached = $('#agreementReached');
         var scorecardTitle = $('#scorecardTitle');
 
-
-
         App.Scorecard.importanceGauge.data('text', importance);
         App.Scorecard.importanceGauge.data('percent', importance);
         App.Scorecard.satisfactionGauge.data('text', satisfaction);
         App.Scorecard.satisfactionGauge.data('percent', satisfaction);
-
-        agreementReached.html(agreement);
-        scorecardType.html(type);
-        scorecardTitle.html(name);
-        
         App.Scorecard.importanceGauge.empty();
         App.Scorecard.satisfactionGauge.empty();
         App.Scorecard.importanceGauge.circliful();
         App.Scorecard.satisfactionGauge.circliful();
+
+        agreementReached.html(agreement);
+        scorecardType.html(type);
+        scorecardTitle.html(name);
     },
     init: function() {
         var footerAlert = $('#scorecardModalFooterAlert');
