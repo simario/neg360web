@@ -37,12 +37,10 @@ App.Scorecard = {
         var footerAlert = $('#scorecardModalFooterAlert');
         footerAlert.hide();
 
-
-        $('#sliderImportant').slider({});
-        $('#sliderSatisfied').slider({});
+        $('#sliderImportant').slider();
+        $('#sliderSatisfied').slider();
         App.Scorecard.importanceGauge = $('#importance2').circliful();
         App.Scorecard.satisfactionGauge = $('#satisfaction2').circliful();
-
         App.Scorecard.createListeners();
     }
 };

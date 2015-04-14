@@ -509,7 +509,7 @@
 					</div>
 				</div>
         	  	<div class="form-group">
-			    	<label for="formImportant" class="col-sm-7 control-label">How important was this negotiation?</label>
+			    	<label for="sliderImportant" class="col-sm-7 control-label">How important was this negotiation?</label>
 					<input id="sliderImportant" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="50"/>
 			  	</div>
         	  	<div class="form-group">
@@ -527,7 +527,7 @@
 			    		</div>
 			  	</div>
         	  	<div class="form-group">
-			    	<label for="formSatisfied" class="col-sm-7 control-label">How satisfied are you with the result?</label>
+			    	<label for="sliderSatisfied" class="col-sm-7 control-label">How satisfied are you with the result?</label>
 					<input id="sliderSatisfied" data-slider-id='sliderSatisfied' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="10" data-slider-value="50"/>
 			  	</div>
 			</form>
@@ -873,6 +873,8 @@
   <!-- Placed at the end of the document so the pages load faster -->
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+	<!-- JavaScript  slider -->
+	<script type='text/javascript' src="js/bootstrap-slider.js"></script>
 
 	<!-- Fixed navigation -->
 	<script src="js/navigation/jquery.smooth-scroll.js"></script>
@@ -1016,15 +1018,17 @@
 				    inGraphDataShow : true,
 				    annotateDisplay : true
 				});
-				var agreelegend = myAgreePieChart.generateLegend();
+
+			/*
+				var agreelegend = window.myAgreePieChart.generateLegend();
 				$("#agreelegend").html(agreelegend);
 
-				var typelegend = myTypePieChart.generateLegend();
+				var typelegend = window.myTypePieChart.generateLegend();
 				$("#typelegend").html(typelegend);
 
-				var importancelegend = myImportanceBarChart.generateLegend();
+				var importancelegend = window.myImportanceBarChart.generateLegend();
 				$("#importancelegend").html(importancelegend);
-
+			*/
 
 	    });
 	});
@@ -1043,15 +1047,10 @@
 	</script>
 
 	<!-- JavaScript bgSlider slider -->
-	<script src="js/bgslider/bgSlider.js"></script>
+	<!--<script src="js/bgslider/bgSlider.js"></script>-->
 
-	<!-- JavaScript  slider -->
-	<script type='text/javascript' src="js/bootstrap-slider.js"></script>
-    <script type='text/javascript'>
-	$(document).ready(function() {
 
-	});
-	</script>
+
 
 	<!-- bootstrap spinner -->
 	<script src="js/jquery.bootstrap-touchspin.js"></script>
@@ -1075,8 +1074,8 @@
     </script>
 
 	<!-- Flexslider -->
-	<script src="js/flexslider/jquery.flexslider.js"></script>
-  <script src="js/flexslider/setting.js"></script>
+	<!--<script src="js/flexslider/jquery.flexslider.js"></script>-->
+  <!--<script src="js/flexslider/setting.js"></script>-->
 
 	<!-- prettyPhoto -->
 	<script src="js/prettyPhoto/jquery.prettyPhoto.js"></script>
