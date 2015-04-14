@@ -53,8 +53,8 @@ App.Profile = {
         $('#claim').change(function () {
             App.Profile.calc();
         });
-        $('#profileModalSaveButton').on('click', function() {
-            App.Profile.save();
+        $('#profileModalSaveButton').on('click', function(event) {
+            App.Profile.save(event);
         });
     },
     createType: function(title, create, assert, empathy, claim, description) {
@@ -83,35 +83,44 @@ App.Profile = {
             footerAlert.show();
         }
     },
-    save: function() {
+    save: function(event) {
         var createVal  = parseInt($('#create').val()) || 0;
         var assertVal  = parseInt($('#assert').val()) || 0;
         var empathyVal = parseInt($('#empathy').val()) || 0;
         var claimVal   = parseInt($('#claim').val()) || 0;
+        var total = createVal + assertVal + empathyVal + claimVal;
+        if(total === 16) {
+            var lowest = 100;
+            var type = null;
+            for (var i = 0; i < App.Profile.types.length; i++) {
+                var createCentroid  = App.Profile.types[i].create;
+                var assertCentroid  = App.Profile.types[i].assert;
+                var empathyCentroid = App.Profile.types[i].empathy;
+                var claimCentroid   = App.Profile.types[i].claim;
 
-        var lowest = 100;
-        var type = null;
-        for (var i = 0; i < App.Profile.types.length; i++) {
-            var createCentroid  = App.Profile.types[i].create;
-            var assertCentroid  = App.Profile.types[i].assert;
-            var empathyCentroid = App.Profile.types[i].empathy;
-            var claimCentroid   = App.Profile.types[i].claim;
-
-            var dist = Math.sqrt(
-                Math.pow((createVal - createCentroid), 2) +
-                Math.pow((assertVal - assertCentroid), 2) +
-                Math.pow((empathyVal - empathyCentroid), 2) +
-                Math.pow((claimVal - claimCentroid), 2)
-            );
-            if (dist < lowest) {
-                lowest = dist;
-                type = App.Profile.types[i];
+                var dist = Math.sqrt(
+                    Math.pow((createVal - createCentroid), 2) +
+                    Math.pow((assertVal - assertCentroid), 2) +
+                    Math.pow((empathyVal - empathyCentroid), 2) +
+                    Math.pow((claimVal - claimCentroid), 2)
+                );
+                if (dist < lowest) {
+                    lowest = dist;
+                    type = App.Profile.types[i];
+                }
             }
+
+            $('#profileDescription').html(type.description);
+            App.Profile.chartData = [createVal, empathyVal, claimVal, assertVal];
+            App.Profile.createChart();
+        } else {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+
+            alert('Remember, numbers must sum to 16. Please try again.');
         }
 
-        $('#profileDescription').html(type.description);
-        App.Profile.chartData = [createVal, empathyVal, claimVal, assertVal];
-        App.Profile.createChart();
+
     },
     init: function() {
         var footerAlert = $('#profileModalFooterAlert');
