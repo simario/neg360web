@@ -19,6 +19,8 @@ App.Profile = {
             ]
         };
 
+        $("#profileChartContainer").empty();
+        $("#profileChartContainer").append('<canvas id="canvas" width="300" height="250"></canvas>');
         var ctx = $("#canvas").get(0).getContext("2d");
         App.Profile.chart = new Chart(ctx).Radar(radarChartData, {
             responsive: true,
@@ -106,7 +108,7 @@ App.Profile = {
                 type = App.Profile.types[i];
             }
         }
-        
+
         $('#profileDescription').html(type.description);
         App.Profile.chartData = [createVal, empathyVal, claimVal, assertVal];
         App.Profile.createChart();
