@@ -409,9 +409,6 @@
 													</div>
 												</div>
 											</li>
-											<!-- <li>No business aplication</li>
-											<li>Support android only</li>
-											<li class="bottom"><a href="#" class="btn btn-default btn-lg">Get it now</a></li> -->
 										</ul>
 									</div>
 								</div>
@@ -419,19 +416,19 @@
 							<div class="col-md-4">
 								<div class="pricing-box centered wow bounceInDown" data-wow-delay="0.6s">
 									<div class="pricing-head">
-										<h4>Your Scorecard</h4>
+										<h4 id="scorecardTitle">Your Scorecard</h4>
 										<div class="pricing-price">
-											<span class="price">?</span>
+											<span class="price" id="agreementReached">?</span>
 											<span class="time">agreement reached</span>
 										</div>
 									</div>
 									<div class="pricing-body">
 										<ul>
-											<li>Type <strong>?</strong></li>
+											<li>Type <strong id="scorecardType">?</strong></li>
 											<li>
 												<div class="row">
 													<div class="col-xs-6">
-														<div class="center" style="font-weight: 700" id="importance2" data-dimension="140" data-text="90" data-width="15" data-fontsize="24" data-percent="90" data-fgcolor="#3399cc" data-bgcolor="#eee" data-type="half" data-fill="#ddd"></div>
+														<div class="center" style="font-weight: 700" id="importance2" data-dimension="140" data-text="0" data-width="15" data-fontsize="24" data-percent="0" data-fgcolor="#3399cc" data-bgcolor="#eee" data-type="half" data-fill="#ddd"></div>
 														<p>Importance<p>
 													</div>
 													<div class="col-xs-6">
@@ -440,7 +437,6 @@
 													</div>
 												</div>
 											</li>
-											<!-- <li>No business aplication</li>-->
 											<p style="margin:20px 20px 10px 20px">The Scorecard feature enables you to do an after-action-review of every negotiation you undertake, large or small. It enables you to draw the right lessons from your own on-going experience.</p>
 											<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#scorecardModal">Try it now</button>
 										</ul>
@@ -471,9 +467,6 @@
 													</div>
 												</div>
 											</li>
-											<!-- <li>Business aplication included</li>
-											<li>Support on IOS</li>
-											<li class="bottom"><a href="#" class="btn btn-default btn-lg">Get it now</a></li> -->
 										</ul>
 									</div>
 								</div>
@@ -523,13 +516,13 @@
 			    	<label for="negotiationName" class="col-sm-5 control-label">Did you reach an agreement?</label>
 			    		<div class="col-sm-7">
 			    			<label class="radio-inline">
-							  <input type="radio" name="negotationAgreement" id="inlineRadio1" value="option1"> Yes
+							  <input type="radio" name="negotationAgreement" id="inlineRadio1" value="Yes"> Yes
 							</label>
 							<label class="radio-inline">
-							  <input type="radio" name="negotationAgreement" id="inlineRadio2" value="option2"> No
+							  <input type="radio" name="negotationAgreement" id="inlineRadio2" value="No"> No
 							</label>
 							<label class="radio-inline">
-							  <input type="radio" name="negotationAgreement" id="inlineRadio3" value="option3"> Not Yet
+							  <input type="radio" name="negotationAgreement" id="inlineRadio3" value="Not Yet"> Not Yet
 							</label>
 			    		</div>
 			  	</div>
@@ -588,38 +581,6 @@
 									</div>
 								</div>
 							</div>
-							<!-- <p>
-							<strong>Address :</strong> Jl.Kemacetan terus No.3 Block.R2 Jakarata - Indonesia<br />
-							<strong>Phone :</strong> +6221 999 999 22 - <strong>Email :</strong> info@yourdomain.com
-							</p> -->
-							<!-- <a href="#" class="btn btn-default btn-lg">Try it now</a> -->
-
-							<!-- <form id="contactform" action="contact/contact.php" method="post" class="validateform" name="leaveContact">
-								<div class="clearfix"></div>
-								<div id="sendmessage">
-									<div class="alert alert-info marginbot35">
-										<button type="button" class="close" data-dismiss="alert">&times;</button>
-										<strong>Your message has been sent. Thank you!</strong><br />
-									</div>
-								</div>
-								<ul class="listForm cbp-so-section">
-									<li class="first-list cbp-so-side cbp-so-side-left">
-										<input class="form-control input-name input-lg" type="text" name="name" data-rule="maxlen:4" data-msg="Required field" placeholder="Enter your full name . . ." />
-										<div class="validation"></div>
-									</li>
-									<li class="cbp-so-side cbp-so-side-right">
-										<input class="form-control input-email input-lg" type="text" name="email" data-rule="email" data-msg="Please enter a valid email" placeholder="Enter your email address . . ."/>
-										<div class="validation"></div>
-									</li>
-									<li class="full-list cbp-so-side cbp-so-side-bottom">
-										<textarea class="form-control input-message input-lg" rows="9" name="message" data-rule="required" data-msg="Please write something for us" placeholder="Write something for us . . ."></textarea>
-										<div class="validation"></div>
-									</li>
-									<li class="full-list text-center cbp-so-side cbp-so-side-bottom">
-										<input type="submit" value="Try it now" class="btn btn-default btn-lg" name="Submit" />
-									</li>
-								</ul>
-							</form> -->
 						</div>
 					</div>
 					<div class="divider pull-left"></div>
@@ -702,16 +663,7 @@
 										</div>
 										<div class="artcle">
 											<div class="article-head">
-												<!-- <div class="date-post">
-													<span class="date">12</span>
-													<span class="mo-year">06-2014</span>
-												</div> -->
 												<h5>Worked Well, Do Differently</h5>
-												<!-- <ul class="meta-post">
-													<li><i class="fa fa-user"></i> <a href="#">John doe</a></li>
-													<li><i class="fa fa-file"></i> <a href="#">App</a></li>
-													<li><i class="fa fa-comment"></i> <a href="#">3</a></li>
-												</ul> -->
 											</div>
 											<div class="article-post">
 												<p>
@@ -732,25 +684,12 @@
 										</div>
 										<div class="artcle">
 											<div class="article-head">
-												<!-- <div class="date-post">
-													<span class="date">10</span>
-													<span class="mo-year">06-2014</span>
-												</div> -->
 												<h5>Profile Comparison</h5>
-												<!-- <ul class="meta-post">
-													<li><i class="fa fa-user"></i> <a href="#">John doe</a></li>
-													<li><i class="fa fa-file"></i> <a href="#">App</a></li>
-													<li><i class="fa fa-comment"></i> <a href="#">3</a></li>
-												</ul> -->
 											</div>
 											<div class="article-post">
 												<p>
 												See how your negotiation results compare to your profile. Find ways to improve and win in your next negotiation.
 												</p>
-												<!-- <p>
-												Harum accusata at pro, mea ne enim probo mediocrem. Vel ei voluptua ponderum phaedrum, pro atqui intellegam id.
-												</p> -->
-												<!-- <a href="singlepost.html">Read more...</a> -->
 											</div>
 										</div>
 									</div>
@@ -762,25 +701,12 @@
 										</div>
 										<div class="artcle">
 											<div class="article-head">
-												<!-- <div class="date-post">
-													<span class="date">08</span>
-													<span class="mo-year">06-2014</span>
-												</div> -->
 												<h5>Skill-Building Tips</h5>
-												<!-- <ul class="meta-post">
-													<li><i class="fa fa-user"></i> <a href="#">John doe</a></li>
-													<li><i class="fa fa-file"></i> <a href="#">App</a></li>
-													<li><i class="fa fa-comment"></i> <a href="#">3</a></li>
-												</ul> -->
 											</div>
 											<div class="article-post">
 												<p>
 												Receive tips on how to improve in each of the fundamental areas of negotiation. Gain critical insight into how these compare with your profile.
 												</p>
-												<!-- <p>
-												Harum accusata at pro, mea ne enim probo mediocrem. Vel ei voluptua ponderum phaedrum, pro atqui intellegam id.
-												</p> -->
-												<!-- <a href="singlepost.html">Read more...</a> -->
 											</div>
 										</div>
 									</div>
@@ -792,25 +718,12 @@
 										</div>
 										<div class="artcle">
 											<div class="article-head">
-												<!-- <div class="date-post">
-													<span class="date">02</span>
-													<span class="mo-year">06-2014</span>
-												</div> -->
 												<h5>Negotiation Notes</h5>
-												<!-- <ul class="meta-post">
-													<li><i class="fa fa-user"></i> <a href="#">John doe</a></li>
-													<li><i class="fa fa-file"></i> <a href="#">App</a></li>
-													<li><i class="fa fa-comment"></i> <a href="#">3</a></li>
-												</ul> -->
 											</div>
 											<div class="article-post">
 												<p>
 												Quickly take notes, relating to a specific negotiation or an external source, and keep these at your fingertips for easy reference.
 												</p>
-												<!-- <p>
-												Harum accusata at pro, mea ne enim probo mediocrem. Vel ei voluptua ponderum phaedrum, pro atqui intellegam id.
-												</p> -->
-												<!-- <a href="singlepost.html">Read more...</a> -->
 											</div>
 										</div>
 									</div>
@@ -946,8 +859,6 @@
 					<a href="https://www.linkedin.com/influencer/266437464-Michael-Wheeler" target ="blank" class="social-network wow bounceInDown" data-wow-delay="0.4s"><i class="fa fa-linkedin"></i></a>
 					<a href="http://www.amazon.com/Art-Negotiation-Improvise-Agreement-Chaotic/dp/1451690428/ref=la_B001HMNL0G_1_2?ie=UTF8&qid=1361979390&sr=1-2" target="blank" class="social-network wow bounceInDown" data-wow-delay="0.6s"><i class="fa fa-book"></i></a>
 					<a href="itunes.apple.com/app/id949271941" target ="blank" class="social-network wow bounceInDown" data-wow-delay="0.8s"><i class="fa fa-apple"></i></a>
-					<!-- <a href="#" class="social-network wow bounceInDown" data-wow-delay="1s"><i class="fa fa-pinterest"></i></a>
-					<a href="#" class="social-network wow bounceInDown" data-wow-delay="1.2s"><i class="fa fa-dribbble"></i></a> -->
 				</div>
 			</div>
 		</div>
@@ -978,46 +889,6 @@
 	<script src="js/app/app.js"></script>
 	<script src="js/app/profile.js"></script>
 	<script src="js/app/scorecard.js"></script>
-
-	<script>
-	var radarChartData = {
-		labels: ['CREATING VALUE', 'EMPATHY', 'CLAIMING VALUE', 'ASSERT'],
-		datasets: [
-			{
-				label: "My Negotiation Profile",
-				fillColor: "rgba(255,159,51,0.2)",
-				strokeColor: "rgba(255,159,51,1)",
-				pointColor: "rgba(255,159,51,1)",
-				pointStrokeColor: "#fff",
-				pointHighlightFill: "#fff",
-				pointHighlightStroke: "rgba(255,159,51,1)",
-				data: [1,3,5,7]
-			}
-		]
-	};
-
-	window.onload = function(){
-		var ctx = document.getElementById("canvas").getContext("2d");
-		window.myRadarChart = new Chart(ctx).Radar(radarChartData, {
-			responsive: true,
-			maintainAspectRatio: false,
-			angleLineColor : "rgba(255,255,255,.5)",
-			scaleShowLine : false,
-			scaleShowLabels : false,
-			pointLabelFontSize : 14,
-			pointLabelFontColor : "white",
-		    animationSteps: 200,
-		    scaleOverride: true,
-		    scaleSteps: 2,
-		    scaleStepWidth: 4,
-		    datasetStrokeWidth : 4,
-		    pointDotRadius : 4,
-		    annotateDisplay : true,
-		    scaleStartValue: 0
-		});
-	}
-
-	</script>
 
 	<!-- Best Practices Charts -->
 
@@ -1166,8 +1037,6 @@
 	$( document ).ready(function() {
 			$('#importance').circliful();
 			$('#satisfaction').circliful();
-			$('#importance2').circliful();
-			$('#satisfaction2').circliful();
 			$('#importance3').circliful();
 			$('#satisfaction3').circliful();
 	    });
