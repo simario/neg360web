@@ -1,9 +1,9 @@
-/* -------------------------------- 
+/* --------------------------------
 
 Primary style
 
 -------------------------------- */
-*, *::after, *::before {
+/**, *::after, *::before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -19,22 +19,22 @@ body {
   color: #34383c;
   background-color: #ffffff;
 }
-body.overflow-hidden {
+body.overflow-hidden {*/
   /* used when modal is visible */
-  overflow: hidden;
+  /*overflow: hidden;
 }
 
 a {
   color: #03bb91;
   text-decoration: none;
-}
+}*/
 
-/* -------------------------------- 
+/* --------------------------------
 
-Main Components 
+Main Components
 
 -------------------------------- */
-header {
+/*header {
   position: relative;
   height: 160px;
   line-height: 160px;
@@ -78,7 +78,7 @@ header h1 {
   .cd-section {
     padding: 4em 20%;
   }
-}
+}*/
 
 .cd-modal {
   position: fixed;

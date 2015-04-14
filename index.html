@@ -304,7 +304,7 @@
 										<canvas id="canvas" width="300" height="250"></canvas>
 									</div>
 									<div>
-										<p id="profileDescription" style="color:#ffffff">The ratings you entered most closely match those of Assertive Value-Claimer. You have an above average confidence in asserting your interests and maximizing your slice of the pie.</p>
+										<p id="profileDescription" style="color:#ffffff">Your profile information will appear here once you answer the short self-assessment.</p>
 									</div>
 								</div>
 								<div class="profile-text">
@@ -339,7 +339,7 @@
 	        		<div>
 	        			<p>Rate your relative strength in respect to four essential negotiation skills. You have a total of <strong>16 points</strong> to allocate overall.</p>
 	        			<p>Remember, you're not judging how good you are at a particular skill. Instead, you're identifying what you are better at - and where else you're not as strong.</p>
-						    <p>Think about your skills in the kind of negotiations that you often do, or that are most important to you. Be sure you use all 16 points - no more; no less, then tap <strong>Save changes</strong> below.</p>
+						    <p>Think about your skills in the kind of negotiations that you often do, or that are most important to you. Be sure you use all 16 points - no more; no less, then tap <strong>Update graph</strong> below.</p>
 	        		</div>
 	        		<div>
 		        		<form class="form-horizontal" role="form">
@@ -368,7 +368,7 @@
 	      </div>
 	      <div class="modal-footer">
 	      	<div id="profileModalFooterAlert" class="alert alert-danger" role="alert">Remember, numbers must sum to 16. Please try again.</div>
-	        <button id="profileModalSaveButton" type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Save">Save changes</button>
+	        <button id="profileModalSaveButton" type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Save">Update graph</button>
 	      </div>
 	    </div>
 	  </div>
@@ -424,7 +424,7 @@
 									</div>
 									<div class="pricing-body">
 										<ul>
-											<li>Type <strong id="scorecardType">?</strong></li>
+											<li><strong id="scorecardType">?</strong></li>
 											<li>
 												<div class="row">
 													<div class="col-xs-6">
@@ -510,7 +510,7 @@
 				</div>
         	  	<div class="form-group">
 			    	<label for="sliderImportant" class="col-sm-7 control-label">How important was this negotiation?</label>
-					<input id="sliderImportant" style="width: 100%;" type="text" data-slider-orientation="horizontal" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="50"/>
+					<input id="sliderImportant" style="width: 200%;" type="text" data-slider-orientation="horizontal" data-slider-min="0" data-slider-max="100" data-slider-step="5" data-slider-value="50"/>
 
 			  	</div>
         	  	<div class="form-group">
@@ -529,12 +529,12 @@
 			  	</div>
         	  	<div class="form-group">
 			    	<label for="sliderSatisfied" class="col-sm-7 control-label">How satisfied are you with the result?</label>
-					<input id="sliderSatisfied" data-slider-id='sliderSatisfied' style="width: 100%;" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="10" data-slider-value="50"/>
+					<input id="sliderSatisfied" data-slider-id='sliderSatisfied' style="width: 200%;" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="5" data-slider-value="50"/>
 			  	</div>
 			</form>
 	      </div>
 	      <div class="modal-footer">
-	        <button id="scorecardModalSaveButton" type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Save">Save changes</button>
+	        <button id="scorecardModalSaveButton" type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Save">Update scorecard</button>
 	      </div>
 	    </div>
 	  </div>
@@ -670,10 +670,6 @@
 												<p>
 												Track your lessons learned, what worked well and what you would do differently, in each negotiaition. Reference these quickly before your next negotiation.
 												</p>
-												<!-- <p>
-												Harum accusata at pro, mea ne enim probo mediocrem. Vel ei voluptua ponderum phaedrum, pro atqui intellegam id.
-												</p> -->
-												<!-- <a href="singlepost.html">Read more...</a> -->
 											</div>
 										</div>
 									</div>
@@ -933,8 +929,8 @@
     </script>
 
 	<!-- Flexslider -->
-	<!--<script src="js/flexslider/jquery.flexslider.js"></script>-->
-  <!--<script src="js/flexslider/setting.js"></script>-->
+	<script src="js/flexslider/jquery.flexslider.js"></script>
+  <script src="js/flexslider/setting.js"></script>
 
 	<!-- prettyPhoto -->
 	<script src="js/prettyPhoto/jquery.prettyPhoto.js"></script>

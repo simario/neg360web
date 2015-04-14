@@ -128,15 +128,15 @@ App.Profile = {
 
         App.Profile.types = [
             App.Profile.createType('Relational Negotiator', 3.222857143, 4.64, 5.382857143, 2.754285714,
-            'The ratings you entered most closely match those of Relational Negotiator. You are more confident about your interpersonal skills (self-advocacy and empathy) than most people are. But you are less sure about how well you do in regard to creating value and claiming your share of it.'),
+            'The ratings you entered most closely match those of <b>Relational Negotiator</b>. You are more confident about your interpersonal skills (self-advocacy and empathy) than most people are. But you are less sure about how well you do in regard to creating value and claiming your share of it.'),
             App.Profile.createType('Empathetic Value-Creator', 4.861538462, 2.77948718, 5.528205128, 2.830769231,
-            'The ratings you entered most closely match those of Empathetic Value-Creator. Your relative confidence about understanding other parties’ motivations and feelings is coupled with confidence about finding value-creating solutions.'),
+            'The ratings you entered most closely match those of <b>Empathetic Value-Creator</b>. Your relative confidence about understanding other parties’ motivations and feelings is coupled with confidence about finding value-creating solutions.'),
             App.Profile.createType('Outcome-Focused Negotiator', 4.756363636, 3.403636364, 3.636363636, 4.203636364,
-            'The ratings you entered most closely match those of Outcome-Focused Negotiator. You have greater confidence than most people about creating value in negotiation and claiming your share of it.'),
+            'The ratings you entered most closely match those of <b>Outcome-Focused Negotiator</b>. You have greater confidence than most people about creating value in negotiation and claiming your share of it.'),
             App.Profile.createType('Assertive Value-Claimer', 2.542857143, 5.257142857, 3.657142857, 4.542857143,
-            'The ratings you entered most closely match those of Assertive Value-Claimer. You have above average confidence in asserting your interests and maximizing your slice of the pie.'),
+            'The ratings you entered most closely match those of <b>Assertive Value-Claimer</b>. You have above average confidence in asserting your interests and maximizing your slice of the pie.'),
             App.Profile.createType('Assertive Value-Creator', 4.628571429, 5.447619048, 3.085714286, 2.838095238,
-            'The ratings you entered most closely match those of Assertive Value-Creator. You have above average confidence in asserting your interests, but are less sure about maximizing your own value in deal.')
+            'The ratings you entered most closely match those of <b>Assertive Value-Creator</b>. You have above average confidence in asserting your interests, but are less sure about maximizing your own value in deal.')
         ];
 
 
